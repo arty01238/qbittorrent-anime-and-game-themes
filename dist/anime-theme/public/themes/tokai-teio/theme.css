@@ -1,0 +1,67 @@
+/* tokai-teio: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="tokai-teio"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Teio Step! Unbeatable!  \2014";
+    --a-caption: "\2726  Teio";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f4f6fb;
+    --a-primary: #2a44a8;
+    --a-primary-bright: #5f73be;
+    --a-deep: #17255c;
+    --a-accent: #c0304f;
+    --a-accent-bright: #d36e84;
+    --a-text: #080c1e;
+    --a-text-disabled: hsl(223deg 10% 58%);
+    --a-link: #17255c;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 246 251 / 74%);
+    --a-surface-2: rgb(228 232 244 / 60%);
+    --a-popup: #fbfbfd;
+    --a-solid: #eaedf7;
+    --a-select: #2a44a8;
+    --a-hover: #5569b9;
+    --a-border: rgb(23 37 92 / 18%);
+    --a-border-strong: #2a44a8;
+    --a-bar: linear-gradient(180deg, #fcfcfe 0%, #dce1f1 100%);
+    --a-bar-text: #17255c;
+    --a-line: #2a44a8;
+    --a-glow: rgb(42 68 168 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 246 251 / 35%) 0%, rgb(244 246 251 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 250 253 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #17255c;
+}
+
+:root[data-character="tokai-teio"].dark {
+    --a-base: #090b12;
+    --a-primary: #7a9aff;
+    --a-primary-bright: #9bb3ff;
+    --a-deep: #2e3b61;
+    --a-accent: #ff8aa0;
+    --a-accent-bright: #ffadbc;
+    --a-text: #f4f7ff;
+    --a-text-disabled: hsl(227deg 10% 45%);
+    --a-link: #95aeff;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(9 11 18 / 68%);
+    --a-surface-2: rgb(20 25 42 / 60%);
+    --a-popup: #101420;
+    --a-solid: #0f121e;
+    --a-select: #475a94;
+    --a-hover: #5e76c4;
+    --a-border: rgb(244 247 255 / 16%);
+    --a-border-strong: #7a9aff;
+    --a-bar: linear-gradient(180deg, #191f33 0%, #090b12 100%);
+    --a-bar-text: #f4f7ff;
+    --a-line: #7a9aff;
+    --a-glow: rgb(122 154 255 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(9 11 18 / 42%) 0%, rgb(9 11 18 / 12%) 60%, transparent 100%);
+    --a-card: rgb(14 17 27 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #7a9aff;
+}

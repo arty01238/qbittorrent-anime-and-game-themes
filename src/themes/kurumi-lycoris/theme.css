@@ -1,0 +1,67 @@
+/* kurumi-lycoris: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="kurumi-lycoris"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Already in your network. Snacks, please.  \2014";
+    --a-caption: "\2328  Kurumi";
+    --a-trim: repeating-linear-gradient(90deg, var(--a-line) 0 10px, transparent 10px 16px) 0 1px / 100% 2px no-repeat;
+    --a-base: #fff8ec;
+    --a-primary: #d0801a;
+    --a-primary-bright: #dca053;
+    --a-deep: #8a4f0a;
+    --a-accent: #2f7a5a;
+    --a-accent-bright: #6da28c;
+    --a-text: #2a1e10;
+    --a-text-disabled: hsl(38deg 10% 58%);
+    --a-link: #8a4f0a;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(255 248 236 / 74%);
+    --a-surface-2: rgb(251 238 219 / 60%);
+    --a-popup: #fffcf7;
+    --a-solid: #fdf2e2;
+    --a-select: #d0801a;
+    --a-hover: #d99948;
+    --a-border: rgb(138 79 10 / 18%);
+    --a-border-strong: #d0801a;
+    --a-bar: linear-gradient(180deg, #fffdf9 0%, #f9ead3 100%);
+    --a-bar-text: #8a4f0a;
+    --a-line: #d0801a;
+    --a-glow: rgb(208 128 26 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(255 248 236 / 35%) 0%, rgb(255 248 236 / 10%) 55%, transparent 100%);
+    --a-card: rgb(255 252 246 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #8a4f0a;
+}
+
+:root[data-character="kurumi-lycoris"].dark {
+    --a-base: #121010;
+    --a-primary: #f2b13a;
+    --a-primary-bright: #f5c46b;
+    --a-deep: #5a3a0a;
+    --a-accent: #6fd6a0;
+    --a-accent-bright: #9ae2bc;
+    --a-text: #f5ece0;
+    --a-text-disabled: hsl(0deg 10% 45%);
+    --a-link: #f5c161;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 16 16 / 68%);
+    --a-surface-2: rgb(40 32 20 / 60%);
+    --a-popup: #1f1a13;
+    --a-solid: #1d1812;
+    --a-select: #8d6927;
+    --a-hover: #ba8930;
+    --a-border: rgb(245 236 224 / 16%);
+    --a-border-strong: #f2b13a;
+    --a-bar: linear-gradient(180deg, #312716 0%, #121010 100%);
+    --a-bar-text: #f5ece0;
+    --a-line: #f2b13a;
+    --a-glow: rgb(242 177 58 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 16 16 / 42%) 0%, rgb(18 16 16 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 22 18 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #f2b13a;
+}

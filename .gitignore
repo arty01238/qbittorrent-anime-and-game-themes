@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+screens/
+screenshots/
+*.tgz
+*.tar
+*.tar.gz
+.DS_Store

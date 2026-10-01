@@ -1,0 +1,67 @@
+/* iono: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="iono"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Attention, chat! Your download is electrifying!  \2014";
+    --a-caption: "\26A1  Iono";
+    --a-trim: repeating-linear-gradient(90deg, var(--a-line) 0 10px, transparent 10px 16px) 0 1px / 100% 2px no-repeat;
+    --a-base: #fcf5f9;
+    --a-primary: #c8408a;
+    --a-primary-bright: #d670a7;
+    --a-deep: #6e234c;
+    --a-accent: #2f5ab8;
+    --a-accent-bright: #6d8ccd;
+    --a-text: #240c19;
+    --a-text-disabled: hsl(326deg 10% 58%);
+    --a-link: #6e234c;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(252 245 249 / 74%);
+    --a-surface-2: rgb(248 231 240 / 60%);
+    --a-popup: #fefbfd;
+    --a-solid: #f9ecf3;
+    --a-select: #c8408a;
+    --a-hover: #d366a1;
+    --a-border: rgb(110 35 76 / 18%);
+    --a-border-strong: #c8408a;
+    --a-bar: linear-gradient(180deg, #fefcfd 0%, #f6dfec 100%);
+    --a-bar-text: #6e234c;
+    --a-line: #c8408a;
+    --a-glow: rgb(200 64 138 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(252 245 249 / 35%) 0%, rgb(252 245 249 / 10%) 55%, transparent 100%);
+    --a-card: rgb(254 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #6e234c;
+}
+
+:root[data-character="iono"].dark {
+    --a-base: #120a0e;
+    --a-primary: #ff8ac8;
+    --a-primary-bright: #ffa7d6;
+    --a-deep: #61344c;
+    --a-accent: #ffe04a;
+    --a-accent-bright: #ffe980;
+    --a-text: #fff6fb;
+    --a-text-disabled: hsl(330deg 10% 45%);
+    --a-link: #ffa1d3;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 10 14 / 68%);
+    --a-surface-2: rgb(42 23 33 / 60%);
+    --a-popup: #201219;
+    --a-solid: #1e1017;
+    --a-select: #945074;
+    --a-hover: #c46a9a;
+    --a-border: rgb(255 246 251 / 16%);
+    --a-border-strong: #ff8ac8;
+    --a-bar: linear-gradient(180deg, #331c28 0%, #120a0e 100%);
+    --a-bar-text: #fff6fb;
+    --a-line: #ff8ac8;
+    --a-glow: rgb(255 138 200 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 10 14 / 42%) 0%, rgb(18 10 14 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 15 21 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff8ac8;
+}

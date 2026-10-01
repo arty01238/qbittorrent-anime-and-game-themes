@@ -1,0 +1,67 @@
+/* siesta: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="siesta"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Case open. Leave the deduction to me.  \2014";
+    --a-caption: "\2726  Detective";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #f5f8fc;
+    --a-primary: #1e2a4a;
+    --a-primary-bright: #2f4a7e;
+    --a-deep: #121a30;
+    --a-accent: #4a9cc9;
+    --a-accent-bright: #8ec9e8;
+    --a-text: #1b2236;
+    --a-text-disabled: hsl(220deg 10% 60%);
+    --a-link: #2a5c9a;
+    --a-warn-text: #9a6a12;
+    --a-error-text: #c0303f;
+    --a-ok-text: #2a7a6a;
+    --a-surface: rgb(245 248 252 / 72%);
+    --a-surface-2: rgb(226 234 244 / 62%);
+    --a-popup: #fbfcfe;
+    --a-solid: #eef3f9;
+    --a-select: #1e2a4a;
+    --a-hover: #3a6ea8;
+    --a-border: rgb(30 42 74 / 20%);
+    --a-border-strong: #1e2a4a;
+    --a-bar: linear-gradient(180deg, #ffffff 0%, #e4ebf5 100%);
+    --a-bar-text: #1e2a4a;
+    --a-line: #1e2a4a;
+    --a-glow: rgb(30 42 74 / 22%);
+    --a-overlay: linear-gradient(90deg, rgb(245 248 252 / 35%) 0%, rgb(245 248 252 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 252 255 / 82%);
+    --a-input: rgb(255 255 255 / 80%);
+    --a-label: #1e2a4a;
+}
+
+:root[data-character="siesta"].dark {
+    --a-base: #0b1020;
+    --a-primary: #8ec9e8;
+    --a-primary-bright: #b5e0f5;
+    --a-deep: #1e2a4a;
+    --a-accent: #c8cdd6;
+    --a-accent-bright: #ffffff;
+    --a-text: #e6ecf5;
+    --a-text-disabled: hsl(220deg 8% 45%);
+    --a-link: #9cd3f0;
+    --a-warn-text: #e8c478;
+    --a-error-text: #ff6b7a;
+    --a-ok-text: #8ee0cf;
+    --a-surface: rgb(10 14 28 / 68%);
+    --a-surface-2: rgb(24 34 60 / 60%);
+    --a-popup: #121a2e;
+    --a-solid: #141c30;
+    --a-select: #2c4a7a;
+    --a-hover: #3d78b5;
+    --a-border: rgb(142 201 232 / 22%);
+    --a-border-strong: #8ec9e8;
+    --a-bar: linear-gradient(180deg, #1e2a4a 0%, #0e1428 100%);
+    --a-bar-text: #e8f1fa;
+    --a-line: #8ec9e8;
+    --a-glow: rgb(142 201 232 / 30%);
+    --a-overlay: linear-gradient(90deg, rgb(8 12 24 / 40%) 0%, rgb(8 12 24 / 10%) 60%, transparent 100%);
+    --a-card: rgb(12 18 34 / 74%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #8ec9e8;
+}

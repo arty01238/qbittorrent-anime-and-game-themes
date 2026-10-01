@@ -1,0 +1,67 @@
+/* eruruu: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="eruruu"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Rest a while. I\2019ve brewed something for that.  \2014";
+    --a-caption: "\2766  Eruruu";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f7efe0;
+    --a-primary: #b23a2e;
+    --a-primary-bright: #d4573f;
+    --a-deep: #6e2018;
+    --a-accent: #5e7a3a;
+    --a-accent-bright: #8aa85a;
+    --a-text: #2e2018;
+    --a-text-disabled: hsl(30deg 10% 60%);
+    --a-link: #a03024;
+    --a-warn-text: #8a6a1e;
+    --a-error-text: #b8202a;
+    --a-ok-text: #4e6a2a;
+    --a-surface: rgb(247 239 224 / 72%);
+    --a-surface-2: rgb(240 225 200 / 60%);
+    --a-popup: #fbf6ec;
+    --a-solid: #f2e8d6;
+    --a-select: #b23a2e;
+    --a-hover: #d4573f;
+    --a-border: rgb(178 58 46 / 20%);
+    --a-border-strong: #6e2018;
+    --a-bar: linear-gradient(180deg, #fffaf0 0%, #efe0c8 100%);
+    --a-bar-text: #4a2014;
+    --a-line: #b23a2e;
+    --a-glow: rgb(178 58 46 / 22%);
+    --a-overlay: linear-gradient(90deg, rgb(247 239 224 / 35%) 0%, rgb(247 239 224 / 10%) 55%, transparent 100%);
+    --a-card: rgb(251 246 236 / 82%);
+    --a-input: rgb(255 255 255 / 80%);
+    --a-label: #b23a2e;
+}
+
+:root[data-character="eruruu"].dark {
+    --a-base: #140d08;
+    --a-primary: #d4573f;
+    --a-primary-bright: #f07a5e;
+    --a-deep: #6e2018;
+    --a-accent: #8aa85a;
+    --a-accent-bright: #b8d488;
+    --a-text: #f2e6d0;
+    --a-text-disabled: hsl(30deg 8% 46%);
+    --a-link: #f29a80;
+    --a-warn-text: #e8c070;
+    --a-error-text: #ff6b6b;
+    --a-ok-text: #b8d488;
+    --a-surface: rgb(20 13 8 / 64%);
+    --a-surface-2: rgb(50 30 20 / 56%);
+    --a-popup: #1e140e;
+    --a-solid: #22170f;
+    --a-select: #8e2a20;
+    --a-hover: #b23a2e;
+    --a-border: rgb(242 230 208 / 18%);
+    --a-border-strong: #b8d488;
+    --a-bar: linear-gradient(180deg, #3a1a12 0%, #160d08 100%);
+    --a-bar-text: #f6ead6;
+    --a-line: #d9b98a;
+    --a-glow: rgb(212 87 63 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(16 10 6 / 40%) 0%, rgb(16 10 6 / 10%) 60%, transparent 100%);
+    --a-card: rgb(22 14 9 / 74%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #d9b98a;
+}

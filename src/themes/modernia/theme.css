@@ -1,0 +1,67 @@
+/* modernia: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="modernia"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  I\2019m still here. I\2019ll stay.  \2014";
+    --a-caption: "\2727  Modernia";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f6f6fb;
+    --a-primary: #4a4aa8;
+    --a-primary-bright: #7777be;
+    --a-deep: #29295c;
+    --a-accent: #7a7a90;
+    --a-accent-bright: #a2a2b1;
+    --a-text: #0d0d1e;
+    --a-text-disabled: hsl(240deg 10% 58%);
+    --a-link: #29295c;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(246 246 251 / 74%);
+    --a-surface-2: rgb(232 232 244 / 60%);
+    --a-popup: #fbfbfd;
+    --a-solid: #ededf7;
+    --a-select: #4a4aa8;
+    --a-hover: #6e6eb9;
+    --a-border: rgb(41 41 92 / 18%);
+    --a-border-strong: #4a4aa8;
+    --a-bar: linear-gradient(180deg, #fcfcfe 0%, #e1e1f1 100%);
+    --a-bar-text: #29295c;
+    --a-line: #4a4aa8;
+    --a-glow: rgb(74 74 168 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(246 246 251 / 35%) 0%, rgb(246 246 251 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 250 253 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #29295c;
+}
+
+:root[data-character="modernia"].dark {
+    --a-base: #0c0c12;
+    --a-primary: #a8a8ff;
+    --a-primary-bright: #bebeff;
+    --a-deep: #404061;
+    --a-accent: #e8e8f0;
+    --a-accent-bright: #efeff4;
+    --a-text: #f8f8ff;
+    --a-text-disabled: hsl(240deg 10% 45%);
+    --a-link: #b9b9ff;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(12 12 18 / 68%);
+    --a-surface-2: rgb(28 28 42 / 60%);
+    --a-popup: #151520;
+    --a-solid: #14141e;
+    --a-select: #626294;
+    --a-hover: #8181c4;
+    --a-border: rgb(248 248 255 / 16%);
+    --a-border-strong: #a8a8ff;
+    --a-bar: linear-gradient(180deg, #222233 0%, #0c0c12 100%);
+    --a-bar-text: #f8f8ff;
+    --a-line: #a8a8ff;
+    --a-glow: rgb(168 168 255 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(12 12 18 / 42%) 0%, rgb(12 12 18 / 12%) 60%, transparent 100%);
+    --a-card: rgb(18 18 27 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #a8a8ff;
+}

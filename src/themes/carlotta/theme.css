@@ -1,0 +1,67 @@
+/* carlotta: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="carlotta"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Elegance first, then precision.  \2014";
+    --a-caption: "\2756  Carlotta";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #f6f8fb;
+    --a-primary: #4a6aa8;
+    --a-primary-bright: #778fbe;
+    --a-deep: #293a5c;
+    --a-accent: #9a804a;
+    --a-accent-bright: #b8a680;
+    --a-text: #0d131e;
+    --a-text-disabled: hsl(216deg 10% 58%);
+    --a-link: #293a5c;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(246 248 251 / 74%);
+    --a-surface-2: rgb(232 237 244 / 60%);
+    --a-popup: #fbfcfd;
+    --a-solid: #edf1f7;
+    --a-select: #4a6aa8;
+    --a-hover: #6e88b9;
+    --a-border: rgb(41 58 92 / 18%);
+    --a-border-strong: #4a6aa8;
+    --a-bar: linear-gradient(180deg, #fcfdfe 0%, #e1e7f1 100%);
+    --a-bar-text: #293a5c;
+    --a-line: #4a6aa8;
+    --a-glow: rgb(74 106 168 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(246 248 251 / 35%) 0%, rgb(246 248 251 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 252 253 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #293a5c;
+}
+
+:root[data-character="carlotta"].dark {
+    --a-base: #0c0e12;
+    --a-primary: #a8c8ff;
+    --a-primary-bright: #bed6ff;
+    --a-deep: #404c61;
+    --a-accent: #e8d8a8;
+    --a-accent-bright: #efe4c2;
+    --a-text: #f8fbff;
+    --a-text-disabled: hsl(220deg 10% 45%);
+    --a-link: #b9d3ff;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(12 14 18 / 68%);
+    --a-surface-2: rgb(28 33 42 / 60%);
+    --a-popup: #151920;
+    --a-solid: #14171e;
+    --a-select: #627494;
+    --a-hover: #819ac4;
+    --a-border: rgb(248 251 255 / 16%);
+    --a-border-strong: #a8c8ff;
+    --a-bar: linear-gradient(180deg, #222833 0%, #0c0e12 100%);
+    --a-bar-text: #f8fbff;
+    --a-line: #a8c8ff;
+    --a-glow: rgb(168 200 255 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(12 14 18 / 42%) 0%, rgb(12 14 18 / 12%) 60%, transparent 100%);
+    --a-card: rgb(18 21 27 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #a8c8ff;
+}

@@ -1,0 +1,67 @@
+/* miku: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="miku"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Sing it louder, the queue is listening!  \2014";
+    --a-caption: "\266B  Miku";
+    --a-trim: repeating-linear-gradient(90deg, var(--a-line) 0 10px, transparent 10px 16px) 0 1px / 100% 2px no-repeat;
+    --a-base: #f4fafa;
+    --a-primary: #1f9a96;
+    --a-primary-bright: #57b3b0;
+    --a-deep: #115552;
+    --a-accent: #c8407a;
+    --a-accent-bright: #d879a2;
+    --a-text: #061c1b;
+    --a-text-disabled: hsl(180deg 10% 58%);
+    --a-link: #115552;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 250 250 / 74%);
+    --a-surface-2: rgb(227 242 242 / 60%);
+    --a-popup: #fbfdfd;
+    --a-solid: #e9f5f5;
+    --a-select: #1f9a96;
+    --a-hover: #4caeab;
+    --a-border: rgb(17 85 82 / 18%);
+    --a-border-strong: #1f9a96;
+    --a-bar: linear-gradient(180deg, #fcfefe 0%, #daeeee 100%);
+    --a-bar-text: #115552;
+    --a-line: #1f9a96;
+    --a-glow: rgb(31 154 150 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 250 250 / 35%) 0%, rgb(244 250 250 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 252 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #115552;
+}
+
+:root[data-character="miku"].dark {
+    --a-base: #06100f;
+    --a-primary: #4fe0d6;
+    --a-primary-bright: #7be8e0;
+    --a-deep: #1e5551;
+    --a-accent: #ff8ab8;
+    --a-accent-bright: #ffadcd;
+    --a-text: #f1fdfc;
+    --a-text-disabled: hsl(174deg 10% 45%);
+    --a-link: #72e6de;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(6 16 15 / 68%);
+    --a-surface-2: rgb(13 37 35 / 60%);
+    --a-popup: #0a1c1b;
+    --a-solid: #0a1a19;
+    --a-select: #2e827c;
+    --a-hover: #3daca4;
+    --a-border: rgb(241 253 252 / 16%);
+    --a-border-strong: #4fe0d6;
+    --a-bar: linear-gradient(180deg, #102d2b 0%, #06100f 100%);
+    --a-bar-text: #f1fdfc;
+    --a-line: #4fe0d6;
+    --a-glow: rgb(79 224 214 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(6 16 15 / 42%) 0%, rgb(6 16 15 / 12%) 60%, transparent 100%);
+    --a-card: rgb(9 24 23 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #4fe0d6;
+}

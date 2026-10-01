@@ -1,0 +1,67 @@
+/* cyrene: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="cyrene"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Petals and memories, carried home.  \2014";
+    --a-caption: "\2740  Cyrene";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fbf3fb;
+    --a-primary: #c24f9e;
+    --a-primary-bright: #d17bb6;
+    --a-deep: #7a2a66;
+    --a-accent: #2f9e97;
+    --a-accent-bright: #6dbbb6;
+    --a-text: #2a1630;
+    --a-text-disabled: hsl(300deg 10% 58%);
+    --a-link: #7a2a66;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 243 251 / 74%);
+    --a-surface-2: rgb(246 230 244 / 60%);
+    --a-popup: #fdfafd;
+    --a-solid: #f8ebf6;
+    --a-select: #c24f9e;
+    --a-hover: #ce72b1;
+    --a-border: rgb(122 42 102 / 18%);
+    --a-border-strong: #c24f9e;
+    --a-bar: linear-gradient(180deg, #fefbfe 0%, #f4dff0 100%);
+    --a-bar-text: #7a2a66;
+    --a-line: #c24f9e;
+    --a-glow: rgb(194 79 158 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 243 251 / 35%) 0%, rgb(251 243 251 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 249 253 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #7a2a66;
+}
+
+:root[data-character="cyrene"].dark {
+    --a-base: #120a1c;
+    --a-primary: #f08ad0;
+    --a-primary-bright: #f4a7dc;
+    --a-deep: #5a2a5e;
+    --a-accent: #7ee0d6;
+    --a-accent-bright: #a5e9e2;
+    --a-text: #f3e6f5;
+    --a-text-disabled: hsl(267deg 10% 45%);
+    --a-link: #f3a1d9;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 10 28 / 68%);
+    --a-surface-2: rgb(40 23 46 / 60%);
+    --a-popup: #1f1227;
+    --a-solid: #1d1025;
+    --a-select: #8c507f;
+    --a-hover: #b86aa3;
+    --a-border: rgb(243 230 245 / 16%);
+    --a-border-strong: #f08ad0;
+    --a-bar: linear-gradient(180deg, #311c35 0%, #120a1c 100%);
+    --a-bar-text: #f3e6f5;
+    --a-line: #f08ad0;
+    --a-glow: rgb(240 138 208 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 10 28 / 42%) 0%, rgb(18 10 28 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 15 35 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #f08ad0;
+}

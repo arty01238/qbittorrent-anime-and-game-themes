@@ -1,0 +1,66 @@
+/* kurumi: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="kurumi"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Kihihihi\2026 shall we share some time?  \2014";
+    --a-caption: "\231A  Tokisaki";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fbf6ee;
+    --a-primary: #b5121b;
+    --a-primary-bright: #e0263a;
+    --a-deep: #6e0a10;
+    --a-accent: #c9a227;
+    --a-accent-bright: #e8c547;
+    --a-text: #2a1a1d;
+    --a-text-disabled: hsl(350deg 10% 60%);
+    --a-link: #a8101a;
+    --a-warn-text: #9a6400;
+    --a-error-text: #c8102e;
+    --a-ok-text: #7a5c00;
+    --a-surface: rgb(251 246 238 / 70%);
+    --a-surface-2: rgb(246 227 227 / 62%);
+    --a-popup: #fdf9f3;
+    --a-solid: #f8ece8;
+    --a-select: #b5121b;
+    --a-hover: #e0263a;
+    --a-border: rgb(181 18 27 / 22%);
+    --a-border-strong: #8a0e15;
+    --a-bar: linear-gradient(180deg, #fffaf3 0%, #f3dede 100%);
+    --a-bar-text: #3a0d12;
+    --a-line: #b5121b;
+    --a-glow: rgb(181 18 27 / 25%);
+    --a-overlay: linear-gradient(90deg, rgb(251 246 238 / 30%) 0%, rgb(251 246 238 / 10%) 55%, transparent 100%);
+    --a-card: rgb(251 246 238 / 80%);
+    --a-input: rgb(255 255 255 / 75%);
+    --a-label: #b5121b;
+}
+
+:root[data-character="kurumi"].dark {
+    --a-base: #120c0e;
+    --a-primary: #e0263a;
+    --a-primary-bright: #ff4d5e;
+    --a-accent: #c9a227;
+    --a-accent-bright: #e8c547;
+    --a-text: #efe4da;
+    --a-text-disabled: hsl(350deg 6% 45%);
+    --a-link: #ff7a87;
+    --a-warn-text: #e8c547;
+    --a-error-text: #ff4d5e;
+    --a-ok-text: #e8c547;
+    --a-surface: rgb(10 6 8 / 66%);
+    --a-surface-2: rgb(30 14 18 / 62%);
+    --a-popup: #1a0f12;
+    --a-solid: #1c1013;
+    --a-select: #9e0f18;
+    --a-hover: #e0263a;
+    --a-border: rgb(201 162 39 / 22%);
+    --a-border-strong: #c9a227;
+    --a-bar: linear-gradient(180deg, #2a0b10 0%, #12080a 100%);
+    --a-bar-text: #f3e6d6;
+    --a-line: #c9a227;
+    --a-glow: rgb(224 38 58 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(8 4 6 / 35%) 0%, rgb(8 4 6 / 10%) 60%, transparent 100%);
+    --a-card: rgb(14 7 10 / 72%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #c9a227;
+}

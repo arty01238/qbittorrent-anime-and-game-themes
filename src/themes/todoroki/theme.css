@@ -1,0 +1,67 @@
+/* todoroki: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="todoroki"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Fire and ice, both are mine.  \2014";
+    --a-caption: "\2744  Todoroki";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #fbf4f4;
+    --a-primary: #b8281f;
+    --a-primary-bright: #ca5e57;
+    --a-deep: #651611;
+    --a-accent: #2f74c0;
+    --a-accent-bright: #6d9ed3;
+    --a-text: #210706;
+    --a-text-disabled: hsl(0deg 10% 58%);
+    --a-link: #651611;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 244 244 / 74%);
+    --a-surface-2: rgb(246 228 227 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f8eae9;
+    --a-select: #b8281f;
+    --a-hover: #c6534c;
+    --a-border: rgb(101 22 17 / 18%);
+    --a-border-strong: #b8281f;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #f3dcda 100%);
+    --a-bar-text: #651611;
+    --a-line: #b8281f;
+    --a-glow: rgb(184 40 31 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 244 244 / 35%) 0%, rgb(251 244 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #651611;
+}
+
+:root[data-character="todoroki"].dark {
+    --a-base: #120706;
+    --a-primary: #ff6a5a;
+    --a-primary-bright: #ff8f83;
+    --a-deep: #612822;
+    --a-accent: #8ac8ff;
+    --a-accent-bright: #add8ff;
+    --a-text: #fff3f2;
+    --a-text-disabled: hsl(5deg 10% 45%);
+    --a-link: #ff887b;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 7 6 / 68%);
+    --a-surface-2: rgb(42 17 14 / 60%);
+    --a-popup: #200d0b;
+    --a-solid: #1e0c0a;
+    --a-select: #943d34;
+    --a-hover: #c45145;
+    --a-border: rgb(255 243 242 / 16%);
+    --a-border-strong: #ff6a5a;
+    --a-bar: linear-gradient(180deg, #331512 0%, #120706 100%);
+    --a-bar-text: #fff3f2;
+    --a-line: #ff6a5a;
+    --a-glow: rgb(255 106 90 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 7 6 / 42%) 0%, rgb(18 7 6 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 11 9 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff6a5a;
+}

@@ -1,0 +1,67 @@
+/* rice-shower: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="rice-shower"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Rice will try her best... for you.  \2014";
+    --a-caption: "\2740  Rice";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f7f4f8;
+    --a-primary: #5a2a7a;
+    --a-primary-bright: #835f9b;
+    --a-deep: #321743;
+    --a-accent: #3444a8;
+    --a-accent-bright: #717cc2;
+    --a-text: #100816;
+    --a-text-disabled: hsl(285deg 10% 58%);
+    --a-link: #321743;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(247 244 248 / 74%);
+    --a-surface-2: rgb(234 228 238 / 60%);
+    --a-popup: #fcfbfc;
+    --a-solid: #efeaf2;
+    --a-select: #5a2a7a;
+    --a-hover: #7b5595;
+    --a-border: rgb(50 23 67 / 18%);
+    --a-border-strong: #5a2a7a;
+    --a-bar: linear-gradient(180deg, #fdfcfd 0%, #e4dce9 100%);
+    --a-bar-text: #321743;
+    --a-line: #5a2a7a;
+    --a-glow: rgb(90 42 122 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(247 244 248 / 35%) 0%, rgb(247 244 248 / 10%) 55%, transparent 100%);
+    --a-card: rgb(251 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #321743;
+}
+
+:root[data-character="rice-shower"].dark {
+    --a-base: #0d0a10;
+    --a-primary: #c08ae0;
+    --a-primary-bright: #d0a7e8;
+    --a-deep: #493455;
+    --a-accent: #8aa8ff;
+    --a-accent-bright: #adc2ff;
+    --a-text: #faf6fd;
+    --a-text-disabled: hsl(270deg 10% 45%);
+    --a-link: #cda1e6;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(13 10 16 / 68%);
+    --a-surface-2: rgb(31 23 37 / 60%);
+    --a-popup: #18121c;
+    --a-solid: #16101a;
+    --a-select: #6f5082;
+    --a-hover: #936aac;
+    --a-border: rgb(250 246 253 / 16%);
+    --a-border-strong: #c08ae0;
+    --a-bar: linear-gradient(180deg, #261c2d 0%, #0d0a10 100%);
+    --a-bar-text: #faf6fd;
+    --a-line: #c08ae0;
+    --a-glow: rgb(192 138 224 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(13 10 16 / 42%) 0%, rgb(13 10 16 / 12%) 60%, transparent 100%);
+    --a-card: rgb(20 15 24 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #c08ae0;
+}

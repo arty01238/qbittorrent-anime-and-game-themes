@@ -1,0 +1,98 @@
+/* Anime theme pack - login page. Colours from themes/<id>/theme.css. */
+@import url("anime-fonts.css");
+html {
+    background: radial-gradient(ellipse at center, transparent 0%, color-mix(in srgb, var(--a-base) 70%, transparent) 100%),
+        var(--a-bg-light) center / cover no-repeat fixed, var(--a-base);
+    min-height: 100%;
+}
+html.dark { background-image: radial-gradient(ellipse at center, transparent 0%, color-mix(in srgb, var(--a-base) 80%, transparent) 100%), var(--a-bg-dark); }
+:root { color-scheme: light; }
+:root.dark { color-scheme: dark; }
+body { color: var(--a-text); font-family: Georgia, "Times New Roman", serif; font-size: 13px; min-height: 100vh; }
+#main {
+    backdrop-filter: blur(6px);
+    background: var(--a-card);
+    border: 1px solid var(--a-accent);
+    border-radius: 14px;
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--a-primary) 35%, transparent), 0 20px 50px rgb(0 0 0 / 45%);
+    margin-top: 8vh;
+    max-width: 340px;
+    padding: 28px 30px 22px;
+    position: relative;
+}
+#main::before { background: var(--a-trim); content: ""; height: 7px; left: 18px; position: absolute; right: 18px; top: 0; }
+#main h1 {
+    background: linear-gradient(90deg, var(--a-primary-bright), var(--a-accent-bright), var(--a-primary-bright));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: var(--a-font);
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    margin: 0 0 14px;
+    order: 1;
+    white-space: nowrap;
+}
+#logo {
+    background:
+        repeating-conic-gradient(from -1.5deg, var(--a-accent-bright) 0deg 3deg, transparent 3deg 30deg),
+        radial-gradient(circle, transparent 62%, var(--a-primary) 63%);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--a-glow);
+    margin-bottom: 14px;
+    order: 0;
+    padding: 7px;
+}
+#logo img { border: 3px solid var(--a-accent); border-radius: 50%; display: block; height: 150px; object-fit: cover; width: 150px; }
+#formplace { order: 2; padding: 0; width: 100%; }
+#error_msg { color: var(--a-error-text); order: 3; }
+#formplace label { color: var(--a-label); font-family: var(--a-font); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+.login-input { background: var(--a-input); border: 1px solid color-mix(in srgb, var(--a-accent) 60%, transparent); border-radius: 6px; color: var(--a-text); }
+.login-input:focus { border-color: var(--a-primary-bright); box-shadow: 0 0 0 3px var(--a-glow); outline: none; }
+#loginButton {
+    background: linear-gradient(180deg, var(--a-hover), var(--a-select));
+    border: 1px solid var(--a-accent);
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--a-font);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+#loginButton:hover { box-shadow: 0 0 12px var(--a-glow); }
+#main::after { color: var(--a-label); content: var(--a-tagline); font-size: 11px; font-style: italic; margin-top: 10px; opacity: 0.9; order: 4; text-align: center; }
+
+/* picker (top-right corner) */
+.anime-picker-login { position: fixed; right: 14px; top: 12px; z-index: 10; }
+.ap-button {
+    align-items: center; background: var(--a-card); border: 1px solid var(--a-accent); border-radius: 999px; color: var(--a-text);
+    cursor: pointer; display: inline-flex; font-family: var(--a-font); font-size: 12px; font-weight: 600; gap: 7px; padding: 2px 11px 2px 2px;
+    backdrop-filter: blur(4px);
+}
+.ap-button:hover { box-shadow: 0 0 10px var(--a-glow); }
+.ap-avatar { border: 1px solid var(--a-accent); border-radius: 50%; height: 22px; object-fit: cover; width: 22px; }
+.ap-caret { opacity: 0.7; }
+.ap-menu { background: var(--a-card); backdrop-filter: blur(8px); border: 1px solid var(--a-accent); border-radius: 10px; box-shadow: 0 10px 28px rgb(0 0 0 / 40%);
+    list-style: none; margin: 0; min-width: 230px; padding: 4px; position: fixed; z-index: 20; }
+.ap-item { align-items: center; border-radius: 7px; color: var(--a-text); cursor: pointer; display: flex; gap: 10px; padding: 6px 8px; }
+.ap-item .ap-avatar { height: 34px; width: 34px; }
+.ap-item:hover, .ap-item:focus { background: var(--a-hover); color: #fff; outline: none; }
+.ap-item[aria-selected="true"] { box-shadow: inset 3px 0 0 var(--a-accent-bright); }
+.ap-text { display: flex; flex-direction: column; line-height: 1.25; text-align: left; }
+.ap-item-name { font-family: var(--a-font); font-weight: 700; }
+.ap-item-series { font-size: 11px; opacity: 0.75; }
+
+/* picker: search + series groups + scrolling list */
+.ap-menu { display: flex; flex-direction: column; max-height: min(560px, 75vh); width: 270px; }
+.ap-menu[hidden] { display: none; }
+.ap-search { background: var(--a-input); border: 1px solid var(--a-border); border-radius: 6px; box-sizing: border-box; color: var(--a-text);
+    font: inherit; font-size: 12px; margin: 2px 2px 4px; padding: 5px 8px; width: calc(100% - 4px); }
+.ap-search:focus { border-color: var(--a-accent-bright); outline: none; box-shadow: 0 0 6px var(--a-glow); }
+.ap-list { flex: 1 1 auto; list-style: none; margin: 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 2px 2px; }
+.ap-group { color: var(--a-label); font-family: var(--a-font); font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; opacity: 0.85;
+    padding: 6px 8px 2px; position: sticky; text-transform: uppercase; top: 0; background: var(--a-solid); z-index: 1; }
+.ap-item[hidden], .ap-group[hidden] { display: none; }
+.ap-item .ap-avatar { flex: none; }
+.ap-empty { font-size: 12px; opacity: 0.7; padding: 8px; text-align: center; }

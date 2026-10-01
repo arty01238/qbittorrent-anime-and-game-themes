@@ -1,0 +1,67 @@
+/* cynthia: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="cynthia"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  A Champion never rushes. Neither do seeds.  \2014";
+    --a-caption: "\2605  Champion";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #f4f4f4;
+    --a-primary: #1a1a1a;
+    --a-primary-bright: #535353;
+    --a-deep: #0e0e0e;
+    --a-accent: #a8800f;
+    --a-accent-bright: #c2a657;
+    --a-text: #050505;
+    --a-text-disabled: hsl(0deg 10% 58%);
+    --a-link: #0e0e0e;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 244 244 / 74%);
+    --a-surface-2: rgb(227 227 227 / 60%);
+    --a-popup: #fbfbfb;
+    --a-solid: #e9e9e9;
+    --a-select: #1a1a1a;
+    --a-hover: #484848;
+    --a-border: rgb(14 14 14 / 18%);
+    --a-border-strong: #1a1a1a;
+    --a-bar: linear-gradient(180deg, #fcfcfc 0%, #dadada 100%);
+    --a-bar-text: #0e0e0e;
+    --a-line: #1a1a1a;
+    --a-glow: rgb(26 26 26 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 244 244 / 35%) 0%, rgb(244 244 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #0e0e0e;
+}
+
+:root[data-character="cynthia"].dark {
+    --a-base: #110e04;
+    --a-primary: #f0c840;
+    --a-primary-bright: #f4d670;
+    --a-deep: #5b4c18;
+    --a-accent: #e8e8e8;
+    --a-accent-bright: #efefef;
+    --a-text: #fefbf0;
+    --a-text-disabled: hsl(46deg 10% 45%);
+    --a-link: #f3d366;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(17 14 4 / 68%);
+    --a-surface-2: rgb(39 33 10 / 60%);
+    --a-popup: #1e1908;
+    --a-solid: #1c1707;
+    --a-select: #8c7425;
+    --a-hover: #b89a31;
+    --a-border: rgb(254 251 240 / 16%);
+    --a-border-strong: #f0c840;
+    --a-bar: linear-gradient(180deg, #30280c 0%, #110e04 100%);
+    --a-bar-text: #fefbf0;
+    --a-line: #f0c840;
+    --a-glow: rgb(240 200 64 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(17 14 4 / 42%) 0%, rgb(17 14 4 / 12%) 60%, transparent 100%);
+    --a-card: rgb(26 21 6 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #f0c840;
+}

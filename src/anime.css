@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Anime character theme pack for qBittorrent WebUI 5.2.x (Alternative WebUI)
+   Shared structure. Every colour comes from --a-* variables defined per
+   character in themes/<id>/theme.css; images are set by themes/theme-loader.js.
+   ========================================================================== */
+@import url("anime-fonts.css");
+
+/* ---------- map character roles onto qBittorrent's own palette ---------- */
+:root[data-character] {
+    --color-accent-blue: var(--a-primary);
+    --color-text-blue: var(--a-link);
+    --color-text-orange: var(--a-warn-text);
+    --color-text-red: var(--a-error-text);
+    --color-text-green: var(--a-ok-text);
+    --color-text-white: #fffaf6;
+    --color-text-disabled: var(--a-text-disabled);
+    --color-text-default: var(--a-text);
+    --color-background-primary: var(--a-surface);
+    --color-background-blue: var(--a-select);
+    --color-background-popup: var(--a-popup);
+    --color-background-default: var(--a-surface-2);
+    --color-background-hover: var(--a-hover);
+    --color-border-blue: var(--a-border-strong);
+    --color-border-default: var(--a-border);
+    --a-bg-image: var(--a-bg-light);
+    scrollbar-color: var(--a-primary) transparent;
+
+    &.dark { --a-bg-image: var(--a-bg-dark); }
+
+    & #torrentTrackersTableDiv tr {
+        --color-tracker-working: var(--a-ok-text);
+        --color-tracker-updating: var(--a-link);
+    }
+}
+::selection { background: var(--a-primary-bright); color: #fff; }
+
+/* ---------- background art (main window only, not iframe dialogs) ---------- */
+:root[data-character]:has(#desktop) {
+    background: var(--a-overlay), var(--a-bg-image) center center / cover no-repeat fixed, var(--a-base);
+}
+:root:has(#desktop) body { min-height: 100vh; }
+
+/* ---------- header / menubar ---------- */
+#desktopHeader { position: relative; }
+#desktopNavbar {
+    background: var(--a-bar);
+    border-bottom: 2px solid var(--a-line);
+    box-shadow: 0 2px 10px var(--a-glow);
+}
+#desktopNavbar > ul > li > a {
+    color: var(--a-bar-text);
+    font-family: var(--a-font);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+#desktopHeader::after {
+    background: var(--a-trim);
+    content: "";
+    display: block;
+    height: 6px;
+    left: 0;
+    opacity: 0.55;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+#desktopNavbar li ul,
+.contextMenu,
+.contextMenu li ul {
+    background-color: var(--a-solid) !important;
+    border: 1px solid var(--a-line);
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgb(0 0 0 / 35%);
+}
+#desktopNavbar li ul li a:hover,
+.contextMenu li a:hover,
+#desktopNavbar ul li a:hover {
+    background: linear-gradient(90deg, var(--a-select) 0%, var(--a-hover) 100%);
+    color: #fff;
+}
+
+/* ---------- toolbar ---------- */
+#mochaToolbar { padding: 2px 4px; }
+#mochaToolbar img { transition: transform 0.15s ease, filter 0.15s ease; }
+#mochaToolbar a:hover img { filter: drop-shadow(0 0 4px var(--a-accent-bright)); transform: scale(1.12); }
+
+/* ---------- panels & filters ---------- */
+.panel-header,
+#propertiesPanel_header,
+#filtersColumn_header {
+    background: var(--a-bar) !important;
+    border-bottom: 1px solid var(--a-line) !important;
+}
+.panel-header h2,
+.filterTitle {
+    color: var(--a-line);
+    font-family: var(--a-font);
+    letter-spacing: 0.06em;
+}
+#Filters .selectedFilter > a {
+    background: linear-gradient(90deg, var(--a-select) 0%, color-mix(in srgb, var(--a-select) 55%, transparent) 100%) !important;
+    border-left: 3px solid var(--a-accent-bright);
+    color: #fff !important;
+}
+#Filters ul li a:hover {
+    background-color: color-mix(in srgb, var(--a-hover) 75%, transparent) !important;
+    color: #fff !important;
+}
+#properties { background-color: var(--color-background-primary); }
+
+/* ---------- tables ---------- */
+.dynamicTable thead th,
+.dynamicTable th {
+    background: var(--a-bar);
+    border-bottom: 1px solid var(--a-line) !important;
+    color: var(--a-bar-text);
+    font-weight: 600;
+}
+.dynamicTableDiv table.dynamicTable tbody tr.selected {
+    background: linear-gradient(90deg, var(--a-select) 0%, color-mix(in srgb, var(--a-select) 80%, black) 100%);
+    box-shadow: inset 3px 0 0 var(--a-accent-bright);
+    color: #fff;
+}
+.dynamicTableDiv table.dynamicTable tbody tr:hover {
+    background-color: color-mix(in srgb, var(--a-hover) 82%, transparent);
+    color: #fff;
+}
+.progressbar_dark { background: linear-gradient(90deg, var(--a-deep), var(--a-primary-bright)) !important; color: #fff !important; }
+.progressbar_light { color: var(--color-text-default) !important; }
+
+/* ---------- tabs, footer, windows ---------- */
+.tab-menu li.selected a {
+    background: linear-gradient(180deg, var(--a-hover), var(--a-select));
+    box-shadow: inset 0 -2px 0 var(--a-accent-bright);
+}
+#desktopFooterWrapper { background: var(--a-bar); border-top: 2px solid var(--a-line); }
+#desktopFooter td { color: var(--a-bar-text); }
+.mocha {
+    border: 1px solid var(--a-line);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 50%), 0 0 0 1px var(--a-glow);
+}
+.mocha, .mochaOverlay { background-color: var(--a-solid); }
+.mochaTitlebar { background: var(--a-bar); border-bottom: 1px solid var(--a-line); }
+.mochaTitlebar h3 { color: var(--a-bar-text); font-family: var(--a-font); letter-spacing: 0.05em; }
+
+/* ---------- form controls ---------- */
+input[type="button"],
+input[type="submit"],
+button:not(.ap-button) {
+    background: linear-gradient(180deg, var(--a-hover), var(--a-select));
+    border-color: var(--a-deep);
+    color: #fff;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:not(.ap-button):hover { border-color: var(--a-accent-bright); box-shadow: 0 0 6px var(--a-glow); }
+input:is([type="text"], [type="search"], [type="password"], [type="number"]):focus,
+textarea:focus,
+select:focus { border-color: var(--a-primary-bright); box-shadow: 0 0 0 2px var(--a-glow); }
+fieldset { border-color: var(--color-border-default); border-radius: 4px; }
+legend { color: var(--a-line); font-family: var(--a-font); }
+a { color: var(--color-accent-blue); }
+
+/* ---------- character picker ---------- */
+#desktopNavbar .anime-picker { float: right; padding: 1px 6px 0 0; }
+.ap-button {
+    align-items: center;
+    background: color-mix(in srgb, var(--a-solid) 70%, transparent);
+    border: 1px solid var(--a-line);
+    border-radius: 999px;
+    color: var(--a-bar-text);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--a-font);
+    font-size: 11px;
+    font-weight: 600;
+    gap: 6px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 1px 9px 1px 2px;
+}
+.ap-button:hover { box-shadow: 0 0 8px var(--a-glow); border-color: var(--a-accent-bright); }
+.ap-avatar { border: 1px solid var(--a-accent); border-radius: 50%; height: 20px; object-fit: cover; width: 20px; }
+.ap-caret { opacity: 0.7; }
+.ap-menu {
+    background: var(--a-solid);
+    border: 1px solid var(--a-line);
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgb(0 0 0 / 45%);
+    list-style: none;
+    margin: 0;
+    min-width: 230px;
+    padding: 4px;
+    position: fixed;
+    z-index: 20000;
+}
+.ap-item {
+    align-items: center;
+    border-radius: 6px;
+    color: var(--a-text);
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    padding: 6px 8px;
+}
+.ap-item .ap-avatar { height: 34px; width: 34px; }
+.ap-item:hover, .ap-item:focus { background: var(--a-hover); color: #fff; outline: none; }
+.ap-item[aria-selected="true"] { box-shadow: inset 3px 0 0 var(--a-accent-bright); background: color-mix(in srgb, var(--a-select) 25%, transparent); }
+.ap-text { display: flex; flex-direction: column; line-height: 1.25; }
+.ap-item-name { font-family: var(--a-font); font-weight: 700; font-size: 13px; }
+.ap-item-series { font-size: 11px; opacity: 0.75; }
+
+/* picker: search + series groups + scrolling list */
+.ap-menu { display: flex; flex-direction: column; max-height: min(560px, 75vh); width: 270px; }
+.ap-menu[hidden] { display: none; }
+.ap-search { background: var(--a-input); border: 1px solid var(--a-border); border-radius: 6px; box-sizing: border-box; color: var(--a-text);
+    font: inherit; font-size: 12px; margin: 2px 2px 4px; padding: 5px 8px; width: calc(100% - 4px); }
+.ap-search:focus { border-color: var(--a-accent-bright); outline: none; box-shadow: 0 0 6px var(--a-glow); }
+.ap-list { flex: 1 1 auto; list-style: none; margin: 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 2px 2px; }
+.ap-group { color: var(--a-label); font-family: var(--a-font); font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; opacity: 0.85;
+    padding: 6px 8px 2px; position: sticky; text-transform: uppercase; top: 0; background: var(--a-solid); z-index: 1; }
+.ap-item[hidden], .ap-group[hidden] { display: none; }
+.ap-item .ap-avatar { flex: none; }
+.ap-empty { font-size: 12px; opacity: 0.7; padding: 8px; text-align: center; }

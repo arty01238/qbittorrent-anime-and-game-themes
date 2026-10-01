@@ -1,0 +1,67 @@
+/* chen-qianyu: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="chen-qianyu"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  One cut, clean and swift.  \2014";
+    --a-caption: "\2694  Qianyu";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #f4f8f7;
+    --a-primary: #1f6a5a;
+    --a-primary-bright: #578f83;
+    --a-deep: #113a32;
+    --a-accent: #b8281f;
+    --a-accent-bright: #cd6862;
+    --a-text: #061310;
+    --a-text-disabled: hsl(165deg 10% 58%);
+    --a-link: #113a32;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 248 247 / 74%);
+    --a-surface-2: rgb(227 237 234 / 60%);
+    --a-popup: #fbfcfc;
+    --a-solid: #e9f1ef;
+    --a-select: #1f6a5a;
+    --a-hover: #4c887b;
+    --a-border: rgb(17 58 50 / 18%);
+    --a-border-strong: #1f6a5a;
+    --a-bar: linear-gradient(180deg, #fcfdfd 0%, #dae7e4 100%);
+    --a-bar-text: #113a32;
+    --a-line: #1f6a5a;
+    --a-glow: rgb(31 106 90 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 248 247 / 35%) 0%, rgb(244 248 247 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 252 251 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #113a32;
+}
+
+:root[data-character="chen-qianyu"].dark {
+    --a-base: #070f0c;
+    --a-primary: #6ad0b0;
+    --a-primary-bright: #8fdcc4;
+    --a-deep: #284f43;
+    --a-accent: #ff6a5a;
+    --a-accent-bright: #ff978c;
+    --a-text: #f3fbf9;
+    --a-text-disabled: hsl(158deg 10% 45%);
+    --a-link: #88d9c0;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(7 15 12 / 68%);
+    --a-surface-2: rgb(17 34 28 / 60%);
+    --a-popup: #0d1b16;
+    --a-solid: #0c1914;
+    --a-select: #3d7966;
+    --a-hover: #51a087;
+    --a-border: rgb(243 251 249 / 16%);
+    --a-border-strong: #6ad0b0;
+    --a-bar: linear-gradient(180deg, #152a23 0%, #070f0c 100%);
+    --a-bar-text: #f3fbf9;
+    --a-line: #6ad0b0;
+    --a-glow: rgb(106 208 176 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(7 15 12 / 42%) 0%, rgb(7 15 12 / 12%) 60%, transparent 100%);
+    --a-card: rgb(11 23 19 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #6ad0b0;
+}

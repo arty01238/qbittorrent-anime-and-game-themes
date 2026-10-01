@@ -1,0 +1,67 @@
+/* dorothy: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="dorothy"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Paradise is a garden worth tending.  \2014";
+    --a-caption: "\2740  Dorothy";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fbf6f8;
+    --a-primary: #b04a7a;
+    --a-primary-bright: #c4779b;
+    --a-deep: #612943;
+    --a-accent: #4a7a3a;
+    --a-accent-bright: #80a275;
+    --a-text: #200d16;
+    --a-text-disabled: hsl(336deg 10% 58%);
+    --a-link: #612943;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 246 248 / 74%);
+    --a-surface-2: rgb(245 232 238 / 60%);
+    --a-popup: #fdfbfc;
+    --a-solid: #f7edf2;
+    --a-select: #b04a7a;
+    --a-hover: #c06e95;
+    --a-border: rgb(97 41 67 / 18%);
+    --a-border-strong: #b04a7a;
+    --a-bar: linear-gradient(180deg, #fefcfd 0%, #f2e1e9 100%);
+    --a-bar-text: #612943;
+    --a-line: #b04a7a;
+    --a-glow: rgb(176 74 122 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 246 248 / 35%) 0%, rgb(251 246 248 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #612943;
+}
+
+:root[data-character="dorothy"].dark {
+    --a-base: #120b0e;
+    --a-primary: #ffa0c8;
+    --a-primary-bright: #ffb8d6;
+    --a-deep: #613d4c;
+    --a-accent: #a8e0a0;
+    --a-accent-bright: #c2e9bc;
+    --a-text: #fff7fb;
+    --a-text-disabled: hsl(334deg 10% 45%);
+    --a-link: #ffb3d3;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 11 14 / 68%);
+    --a-surface-2: rgb(42 26 33 / 60%);
+    --a-popup: #201419;
+    --a-solid: #1e1217;
+    --a-select: #945d74;
+    --a-hover: #c47b9a;
+    --a-border: rgb(255 247 251 / 16%);
+    --a-border-strong: #ffa0c8;
+    --a-bar: linear-gradient(180deg, #332028 0%, #120b0e 100%);
+    --a-bar-text: #fff7fb;
+    --a-line: #ffa0c8;
+    --a-glow: rgb(255 160 200 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 11 14 / 42%) 0%, rgb(18 11 14 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 17 21 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ffa0c8;
+}
