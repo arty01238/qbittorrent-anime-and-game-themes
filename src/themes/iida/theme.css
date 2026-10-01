@@ -1,0 +1,67 @@
+/* iida: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="iida"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Order! Downloads proceed single file!  \2014";
+    --a-caption: "\25B2  Iida";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #f4f6fa;
+    --a-primary: #2a4a9a;
+    --a-primary-bright: #5f77b3;
+    --a-deep: #172955;
+    --a-accent: #5a6a80;
+    --a-accent-bright: #8c97a6;
+    --a-text: #080d1c;
+    --a-text-disabled: hsl(220deg 10% 58%);
+    --a-link: #172955;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 246 250 / 74%);
+    --a-surface-2: rgb(228 232 242 / 60%);
+    --a-popup: #fbfbfd;
+    --a-solid: #eaedf5;
+    --a-select: #2a4a9a;
+    --a-hover: #556eae;
+    --a-border: rgb(23 41 85 / 18%);
+    --a-border-strong: #2a4a9a;
+    --a-bar: linear-gradient(180deg, #fcfcfe 0%, #dce1ee 100%);
+    --a-bar-text: #172955;
+    --a-line: #2a4a9a;
+    --a-glow: rgb(42 74 154 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 246 250 / 35%) 0%, rgb(244 246 250 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #172955;
+}
+
+:root[data-character="iida"].dark {
+    --a-base: #070a12;
+    --a-primary: #6a90ff;
+    --a-primary-bright: #8facff;
+    --a-deep: #283761;
+    --a-accent: #d0d8e8;
+    --a-accent-bright: #dee4ef;
+    --a-text: #f3f6ff;
+    --a-text-disabled: hsl(224deg 10% 45%);
+    --a-link: #88a6ff;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(7 10 18 / 68%);
+    --a-surface-2: rgb(17 23 42 / 60%);
+    --a-popup: #0d1220;
+    --a-solid: #0c111e;
+    --a-select: #3d5494;
+    --a-hover: #516ec4;
+    --a-border: rgb(243 246 255 / 16%);
+    --a-border-strong: #6a90ff;
+    --a-bar: linear-gradient(180deg, #151d33 0%, #070a12 100%);
+    --a-bar-text: #f3f6ff;
+    --a-line: #6a90ff;
+    --a-glow: rgb(106 144 255 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(7 10 18 / 42%) 0%, rgb(7 10 18 / 12%) 60%, transparent 100%);
+    --a-card: rgb(11 15 27 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #6a90ff;
+}

@@ -1,0 +1,67 @@
+/* ember: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="ember"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Hold the line. I\2019ll take the heat.  \2014";
+    --a-caption: "\2739  Ember";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #fbf5f4;
+    --a-primary: #b8401a;
+    --a-primary-bright: #ca7053;
+    --a-deep: #65230e;
+    --a-accent: #2a2a2a;
+    --a-accent-bright: #6a6a6a;
+    --a-text: #210c05;
+    --a-text-disabled: hsl(9deg 10% 58%);
+    --a-link: #65230e;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 245 244 / 74%);
+    --a-surface-2: rgb(246 231 227 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f8ece9;
+    --a-select: #b8401a;
+    --a-hover: #c66648;
+    --a-border: rgb(101 35 14 / 18%);
+    --a-border-strong: #b8401a;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #f3dfda 100%);
+    --a-bar-text: #65230e;
+    --a-line: #b8401a;
+    --a-glow: rgb(184 64 26 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 245 244 / 35%) 0%, rgb(251 245 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #65230e;
+}
+
+:root[data-character="ember"].dark {
+    --a-base: #120904;
+    --a-primary: #ff7a3a;
+    --a-primary-bright: #ff9b6b;
+    --a-deep: #612e16;
+    --a-accent: #ffd27a;
+    --a-accent-bright: #ffe0a2;
+    --a-text: #fff4ef;
+    --a-text-disabled: hsl(21deg 10% 45%);
+    --a-link: #ff9561;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 9 4 / 68%);
+    --a-surface-2: rgb(42 20 9 / 60%);
+    --a-popup: #201007;
+    --a-solid: #1e0f07;
+    --a-select: #944722;
+    --a-hover: #c45e2c;
+    --a-border: rgb(255 244 239 / 16%);
+    --a-border-strong: #ff7a3a;
+    --a-bar: linear-gradient(180deg, #33190c 0%, #120904 100%);
+    --a-bar-text: #fff4ef;
+    --a-line: #ff7a3a;
+    --a-glow: rgb(255 122 58 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 9 4 / 42%) 0%, rgb(18 9 4 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 14 6 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff7a3a;
+}

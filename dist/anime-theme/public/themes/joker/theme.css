@@ -1,0 +1,67 @@
+/* joker: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="joker"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Your heart is mine. Your seeds too.  \2014";
+    --a-caption: "\2660  Joker";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #fbf4f4;
+    --a-primary: #b01f2a;
+    --a-primary-bright: #c4575f;
+    --a-deep: #611117;
+    --a-accent: #1a1a1a;
+    --a-accent-bright: #5f5f5f;
+    --a-text: #200608;
+    --a-text-disabled: hsl(0deg 10% 58%);
+    --a-link: #611117;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 244 244 / 74%);
+    --a-surface-2: rgb(245 227 228 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f7e9ea;
+    --a-select: #b01f2a;
+    --a-hover: #c04c55;
+    --a-border: rgb(97 17 23 / 18%);
+    --a-border-strong: #b01f2a;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #f2dadc 100%);
+    --a-bar-text: #611117;
+    --a-line: #b01f2a;
+    --a-glow: rgb(176 31 42 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 244 244 / 35%) 0%, rgb(251 244 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #611117;
+}
+
+:root[data-character="joker"].dark {
+    --a-base: #120404;
+    --a-primary: #ff3a3a;
+    --a-primary-bright: #ff6b6b;
+    --a-deep: #611616;
+    --a-accent: #f0f0f0;
+    --a-accent-bright: #f4f4f4;
+    --a-text: #ffefef;
+    --a-text-disabled: hsl(0deg 10% 45%);
+    --a-link: #ff6161;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 4 4 / 68%);
+    --a-surface-2: rgb(42 9 9 / 60%);
+    --a-popup: #200707;
+    --a-solid: #1e0707;
+    --a-select: #942222;
+    --a-hover: #c42c2c;
+    --a-border: rgb(255 239 239 / 16%);
+    --a-border-strong: #ff3a3a;
+    --a-bar: linear-gradient(180deg, #330c0c 0%, #120404 100%);
+    --a-bar-text: #ffefef;
+    --a-line: #ff3a3a;
+    --a-glow: rgb(255 58 58 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 4 4 / 42%) 0%, rgb(18 4 4 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 6 6 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff3a3a;
+}

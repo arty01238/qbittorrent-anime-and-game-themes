@@ -1,0 +1,67 @@
+/* sayaka: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="sayaka"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Justice rides on a single wish.  \2014";
+    --a-caption: "\266B  Sayaka";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f0f6ff;
+    --a-primary: #2f6fd6;
+    --a-primary-bright: #6393e0;
+    --a-deep: #163e86;
+    --a-accent: #c9a02a;
+    --a-accent-bright: #d9bc6a;
+    --a-text: #101c34;
+    --a-text-disabled: hsl(216deg 10% 58%);
+    --a-link: #163e86;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(240 246 255 / 74%);
+    --a-surface-2: rgb(225 235 252 / 60%);
+    --a-popup: #f9fbff;
+    --a-solid: #e6effd;
+    --a-select: #2f6fd6;
+    --a-hover: #598cde;
+    --a-border: rgb(22 62 134 / 18%);
+    --a-border-strong: #2f6fd6;
+    --a-bar: linear-gradient(180deg, #fafcff 0%, #d9e6fa 100%);
+    --a-bar-text: #163e86;
+    --a-line: #2f6fd6;
+    --a-glow: rgb(47 111 214 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(240 246 255 / 35%) 0%, rgb(240 246 255 / 10%) 55%, transparent 100%);
+    --a-card: rgb(248 250 255 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #163e86;
+}
+
+:root[data-character="sayaka"].dark {
+    --a-base: #070d1c;
+    --a-primary: #5a9cff;
+    --a-primary-bright: #83b5ff;
+    --a-deep: #183a7a;
+    --a-accent: #d9e6ff;
+    --a-accent-bright: #e4eeff;
+    --a-text: #e6eeff;
+    --a-text-disabled: hsl(223deg 10% 45%);
+    --a-link: #7bb0ff;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(7 13 28 / 68%);
+    --a-surface-2: rgb(15 27 51 / 60%);
+    --a-popup: #0c162a;
+    --a-solid: #0b1427;
+    --a-select: #355c99;
+    --a-hover: #4578c6;
+    --a-border: rgb(230 238 255 / 16%);
+    --a-border-strong: #5a9cff;
+    --a-bar: linear-gradient(180deg, #13213c 0%, #070d1c 100%);
+    --a-bar-text: #e6eeff;
+    --a-line: #5a9cff;
+    --a-glow: rgb(90 156 255 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(7 13 28 / 42%) 0%, rgb(7 13 28 / 12%) 60%, transparent 100%);
+    --a-card: rgb(10 19 37 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #5a9cff;
+}

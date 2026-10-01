@@ -1,0 +1,67 @@
+/* futaba: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="futaba"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Navi online. Your ports are open.  \2014";
+    --a-caption: "\2328  Oracle";
+    --a-trim: repeating-linear-gradient(90deg, var(--a-line) 0 10px, transparent 10px 16px) 0 1px / 100% 2px no-repeat;
+    --a-base: #fcf7f3;
+    --a-primary: #c0600f;
+    --a-primary-bright: #d0884b;
+    --a-deep: #6a3508;
+    --a-accent: #1f7a5a;
+    --a-accent-bright: #62a28c;
+    --a-text: #231103;
+    --a-text-disabled: hsl(27deg 10% 58%);
+    --a-link: #6a3508;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(252 247 243 / 74%);
+    --a-surface-2: rgb(247 235 225 / 60%);
+    --a-popup: #fefcfa;
+    --a-solid: #f9efe8;
+    --a-select: #c0600f;
+    --a-hover: #cd803f;
+    --a-border: rgb(106 53 8 / 18%);
+    --a-border-strong: #c0600f;
+    --a-bar: linear-gradient(180deg, #fefdfb 0%, #f5e5d8 100%);
+    --a-bar-text: #6a3508;
+    --a-line: #c0600f;
+    --a-glow: rgb(192 96 15 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(252 247 243 / 35%) 0%, rgb(252 247 243 / 10%) 55%, transparent 100%);
+    --a-card: rgb(254 251 249 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #6a3508;
+}
+
+:root[data-character="futaba"].dark {
+    --a-base: #120b04;
+    --a-primary: #ff9a3a;
+    --a-primary-bright: #ffb36b;
+    --a-deep: #613b16;
+    --a-accent: #6ad0a0;
+    --a-accent-bright: #97debc;
+    --a-text: #fff7ef;
+    --a-text-disabled: hsl(30deg 10% 45%);
+    --a-link: #ffae61;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 11 4 / 68%);
+    --a-surface-2: rgb(42 25 9 / 60%);
+    --a-popup: #201407;
+    --a-solid: #1e1207;
+    --a-select: #945a22;
+    --a-hover: #c4762c;
+    --a-border: rgb(255 247 239 / 16%);
+    --a-border-strong: #ff9a3a;
+    --a-bar: linear-gradient(180deg, #331f0c 0%, #120b04 100%);
+    --a-bar-text: #fff7ef;
+    --a-line: #ff9a3a;
+    --a-glow: rgb(255 154 58 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 11 4 / 42%) 0%, rgb(18 11 4 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 17 6 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff9a3a;
+}

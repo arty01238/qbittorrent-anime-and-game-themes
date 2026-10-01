@@ -1,0 +1,67 @@
+/* madoka: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="madoka"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Every wish deserves a happy ending.  \2014";
+    --a-caption: "\2740  Madoka";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fff7fa;
+    --a-primary: #d94a82;
+    --a-primary-bright: #f37fa8;
+    --a-deep: #a8325e;
+    --a-accent: #c9a04a;
+    --a-accent-bright: #e8c46a;
+    --a-text: #3a1f2b;
+    --a-text-disabled: hsl(340deg 10% 62%);
+    --a-link: #c23a72;
+    --a-warn-text: #a8781e;
+    --a-error-text: #d0304a;
+    --a-ok-text: #8a6a1a;
+    --a-surface: rgb(255 247 250 / 72%);
+    --a-surface-2: rgb(255 225 236 / 62%);
+    --a-popup: #fffbfd;
+    --a-solid: #fff0f5;
+    --a-select: #d94a82;
+    --a-hover: #f37fa8;
+    --a-border: rgb(224 85 138 / 22%);
+    --a-border-strong: #c23a72;
+    --a-bar: linear-gradient(180deg, #ffffff 0%, #ffe1ec 100%);
+    --a-bar-text: #6a1f40;
+    --a-line: #f37fa8;
+    --a-glow: rgb(243 127 168 / 30%);
+    --a-overlay: linear-gradient(90deg, rgb(255 247 250 / 35%) 0%, rgb(255 247 250 / 10%) 55%, transparent 100%);
+    --a-card: rgb(255 250 252 / 82%);
+    --a-input: rgb(255 255 255 / 80%);
+    --a-label: #d94a82;
+}
+
+:root[data-character="madoka"].dark {
+    --a-base: #1a0e15;
+    --a-primary: #f37fa8;
+    --a-primary-bright: #ffc1d6;
+    --a-deep: #7a2448;
+    --a-accent: #e2b857;
+    --a-accent-bright: #ffe08a;
+    --a-text: #fbe9f0;
+    --a-text-disabled: hsl(340deg 8% 48%);
+    --a-link: #ffa6c6;
+    --a-warn-text: #ffd27a;
+    --a-error-text: #ff6b85;
+    --a-ok-text: #ffe08a;
+    --a-surface: rgb(26 12 20 / 62%);
+    --a-surface-2: rgb(60 24 42 / 55%);
+    --a-popup: #24131c;
+    --a-solid: #2a1520;
+    --a-select: #b83a6e;
+    --a-hover: #f37fa8;
+    --a-border: rgb(255 193 214 / 20%);
+    --a-border-strong: #ffc1d6;
+    --a-bar: linear-gradient(180deg, #4a1b30 0%, #1e0d16 100%);
+    --a-bar-text: #ffe6ef;
+    --a-line: #ffc1d6;
+    --a-glow: rgb(243 127 168 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(20 8 14 / 40%) 0%, rgb(20 8 14 / 10%) 60%, transparent 100%);
+    --a-card: rgb(30 12 22 / 72%);
+    --a-input: rgb(255 255 255 / 7%);
+    --a-label: #ffc1d6;
+}

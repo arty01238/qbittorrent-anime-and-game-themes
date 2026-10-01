@@ -1,0 +1,67 @@
+/* makoto-niijima: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="makoto-niijima"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Queen\2019s orders: by the book.  \2014";
+    --a-caption: "\2655  Queen";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #f5f5f8;
+    --a-primary: #34347a;
+    --a-primary-bright: #67679b;
+    --a-deep: #1d1d43;
+    --a-accent: #8a2a3a;
+    --a-accent-bright: #ad6a75;
+    --a-text: #090916;
+    --a-text-disabled: hsl(240deg 10% 58%);
+    --a-link: #1d1d43;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(245 245 248 / 74%);
+    --a-surface-2: rgb(230 230 238 / 60%);
+    --a-popup: #fbfbfc;
+    --a-solid: #ebebf2;
+    --a-select: #34347a;
+    --a-hover: #5d5d95;
+    --a-border: rgb(29 29 67 / 18%);
+    --a-border-strong: #34347a;
+    --a-bar: linear-gradient(180deg, #fcfcfd 0%, #dedee9 100%);
+    --a-bar-text: #1d1d43;
+    --a-line: #34347a;
+    --a-glow: rgb(52 52 122 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(245 245 248 / 35%) 0%, rgb(245 245 248 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #1d1d43;
+}
+
+:root[data-character="makoto-niijima"].dark {
+    --a-base: #0a0a10;
+    --a-primary: #8a8ae0;
+    --a-primary-bright: #a7a7e8;
+    --a-deep: #343455;
+    --a-accent: #ff6a7a;
+    --a-accent-bright: #ff97a2;
+    --a-text: #f6f6fd;
+    --a-text-disabled: hsl(240deg 10% 45%);
+    --a-link: #a1a1e6;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(10 10 16 / 68%);
+    --a-surface-2: rgb(23 23 37 / 60%);
+    --a-popup: #12121c;
+    --a-solid: #10101a;
+    --a-select: #505082;
+    --a-hover: #6a6aac;
+    --a-border: rgb(246 246 253 / 16%);
+    --a-border-strong: #8a8ae0;
+    --a-bar: linear-gradient(180deg, #1c1c2d 0%, #0a0a10 100%);
+    --a-bar-text: #f6f6fd;
+    --a-line: #8a8ae0;
+    --a-glow: rgb(138 138 224 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(10 10 16 / 42%) 0%, rgb(10 10 16 / 12%) 60%, transparent 100%);
+    --a-card: rgb(15 15 24 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #8a8ae0;
+}

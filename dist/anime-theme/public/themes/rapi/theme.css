@@ -1,0 +1,67 @@
+/* rapi: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="rapi"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Target confirmed. Orders, Commander?  \2014";
+    --a-caption: "\25C8  Rapi";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #fbf4f4;
+    --a-primary: #a82424;
+    --a-primary-bright: #be5b5b;
+    --a-deep: #5c1414;
+    --a-accent: #3a3a3a;
+    --a-accent-bright: #757575;
+    --a-text: #1e0606;
+    --a-text-disabled: hsl(0deg 10% 58%);
+    --a-link: #5c1414;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 244 244 / 74%);
+    --a-surface-2: rgb(244 227 227 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f7eaea;
+    --a-select: #a82424;
+    --a-hover: #b95050;
+    --a-border: rgb(92 20 20 / 18%);
+    --a-border-strong: #a82424;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #f1dbdb 100%);
+    --a-bar-text: #5c1414;
+    --a-line: #a82424;
+    --a-glow: rgb(168 36 36 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 244 244 / 35%) 0%, rgb(251 244 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #5c1414;
+}
+
+:root[data-character="rapi"].dark {
+    --a-base: #120606;
+    --a-primary: #ff5a5a;
+    --a-primary-bright: #ff8383;
+    --a-deep: #612222;
+    --a-accent: #d8d8d8;
+    --a-accent-bright: #e4e4e4;
+    --a-text: #fff2f2;
+    --a-text-disabled: hsl(0deg 10% 45%);
+    --a-link: #ff7b7b;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 6 6 / 68%);
+    --a-surface-2: rgb(42 14 14 / 60%);
+    --a-popup: #200b0b;
+    --a-solid: #1e0a0a;
+    --a-select: #943434;
+    --a-hover: #c44545;
+    --a-border: rgb(255 242 242 / 16%);
+    --a-border-strong: #ff5a5a;
+    --a-bar: linear-gradient(180deg, #331212 0%, #120606 100%);
+    --a-bar-text: #fff2f2;
+    --a-line: #ff5a5a;
+    --a-glow: rgb(255 90 90 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 6 6 / 42%) 0%, rgb(18 6 6 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 9 9 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff5a5a;
+}

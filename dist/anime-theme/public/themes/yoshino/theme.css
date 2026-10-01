@@ -1,0 +1,67 @@
+/* yoshino: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="yoshino"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Yoshinon says: don\2019t be scared of the rain!  \2014";
+    --a-caption: "\2602  Yoshino";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f1f8ef;
+    --a-primary: #3f8f4a;
+    --a-primary-bright: #6fab77;
+    --a-deep: #245a2c;
+    --a-accent: #2f86c0;
+    --a-accent-bright: #6daad3;
+    --a-text: #15281a;
+    --a-text-disabled: hsl(107deg 10% 58%);
+    --a-link: #245a2c;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(241 248 239 / 74%);
+    --a-surface-2: rgb(227 240 226 / 60%);
+    --a-popup: #f9fcf9;
+    --a-solid: #e8f3e7;
+    --a-select: #3f8f4a;
+    --a-hover: #65a56e;
+    --a-border: rgb(36 90 44 / 18%);
+    --a-border-strong: #3f8f4a;
+    --a-bar: linear-gradient(180deg, #fbfdfa 0%, #dcebdb 100%);
+    --a-bar-text: #245a2c;
+    --a-line: #3f8f4a;
+    --a-glow: rgb(63 143 74 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(241 248 239 / 35%) 0%, rgb(241 248 239 / 10%) 55%, transparent 100%);
+    --a-card: rgb(248 252 247 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #245a2c;
+}
+
+:root[data-character="yoshino"].dark {
+    --a-base: #071814;
+    --a-primary: #7cd18a;
+    --a-primary-bright: #9ddca7;
+    --a-deep: #1f4a2a;
+    --a-accent: #7cc8f0;
+    --a-accent-bright: #a3d8f4;
+    --a-text: #e4f4ea;
+    --a-text-disabled: hsl(166deg 10% 45%);
+    --a-link: #96daa1;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(7 24 20 / 68%);
+    --a-surface-2: rgb(19 42 32 / 60%);
+    --a-popup: #0e231b;
+    --a-solid: #0d211a;
+    --a-select: #477e55;
+    --a-hover: #5fa36c;
+    --a-border: rgb(228 244 234 / 16%);
+    --a-border-strong: #7cd18a;
+    --a-bar: linear-gradient(180deg, #173225 0%, #071814 100%);
+    --a-bar-text: #e4f4ea;
+    --a-line: #7cd18a;
+    --a-glow: rgb(124 209 138 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(7 24 20 / 42%) 0%, rgb(7 24 20 / 12%) 60%, transparent 100%);
+    --a-card: rgb(12 31 25 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #7cd18a;
+}

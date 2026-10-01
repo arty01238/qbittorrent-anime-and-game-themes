@@ -1,0 +1,67 @@
+/* haruhi-fujioka: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="haruhi-fujioka"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Commoner rules: no wasted bandwidth.  \2014";
+    --a-caption: "\273F  Haruhi";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #f7f5f9;
+    --a-primary: #5e3f80;
+    --a-primary-bright: #866fa0;
+    --a-deep: #342346;
+    --a-accent: #b0607f;
+    --a-accent-bright: #c890a5;
+    --a-text: #110b17;
+    --a-text-disabled: hsl(270deg 10% 58%);
+    --a-link: #342346;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(247 245 249 / 74%);
+    --a-surface-2: rgb(235 230 239 / 60%);
+    --a-popup: #fcfbfd;
+    --a-solid: #efecf3;
+    --a-select: #5e3f80;
+    --a-hover: #7e6599;
+    --a-border: rgb(52 35 70 / 18%);
+    --a-border-strong: #5e3f80;
+    --a-bar: linear-gradient(180deg, #fdfcfd 0%, #e5dfea 100%);
+    --a-bar-text: #342346;
+    --a-line: #5e3f80;
+    --a-glow: rgb(94 63 128 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(247 245 249 / 35%) 0%, rgb(247 245 249 / 10%) 55%, transparent 100%);
+    --a-card: rgb(251 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #342346;
+}
+
+:root[data-character="haruhi-fujioka"].dark {
+    --a-base: #0d0b10;
+    --a-primary: #b89ae0;
+    --a-primary-bright: #cab3e8;
+    --a-deep: #463b55;
+    --a-accent: #ffb0d0;
+    --a-accent-bright: #ffc8de;
+    --a-text: #f9f7fd;
+    --a-text-disabled: hsl(264deg 10% 45%);
+    --a-link: #c6aee6;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(13 11 16 / 68%);
+    --a-surface-2: rgb(30 25 37 / 60%);
+    --a-popup: #17141c;
+    --a-solid: #16121a;
+    --a-select: #6b5a82;
+    --a-hover: #8d76ac;
+    --a-border: rgb(249 247 253 / 16%);
+    --a-border-strong: #b89ae0;
+    --a-bar: linear-gradient(180deg, #251f2d 0%, #0d0b10 100%);
+    --a-bar-text: #f9f7fd;
+    --a-line: #b89ae0;
+    --a-glow: rgb(184 154 224 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(13 11 16 / 42%) 0%, rgb(13 11 16 / 12%) 60%, transparent 100%);
+    --a-card: rgb(20 17 24 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #b89ae0;
+}

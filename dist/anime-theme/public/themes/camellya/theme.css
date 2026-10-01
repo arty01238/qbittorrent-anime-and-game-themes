@@ -1,0 +1,67 @@
+/* camellya: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="camellya"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  Petals fall where I wander.  \2014";
+    --a-caption: "\2740  Camellya";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f4f4f4;
+    --a-primary: #2a2a2a;
+    --a-primary-bright: #5f5f5f;
+    --a-deep: #171717;
+    --a-accent: #b0202a;
+    --a-accent-bright: #c8636a;
+    --a-text: #080808;
+    --a-text-disabled: hsl(0deg 10% 58%);
+    --a-link: #171717;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 244 244 / 74%);
+    --a-surface-2: rgb(228 228 228 / 60%);
+    --a-popup: #fbfbfb;
+    --a-solid: #eaeaea;
+    --a-select: #2a2a2a;
+    --a-hover: #555555;
+    --a-border: rgb(23 23 23 / 18%);
+    --a-border-strong: #2a2a2a;
+    --a-bar: linear-gradient(180deg, #fcfcfc 0%, #dcdcdc 100%);
+    --a-bar-text: #171717;
+    --a-line: #2a2a2a;
+    --a-glow: rgb(42 42 42 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 244 244 / 35%) 0%, rgb(244 244 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #171717;
+}
+
+:root[data-character="camellya"].dark {
+    --a-base: #101010;
+    --a-primary: #e8e8e8;
+    --a-primary-bright: #eeeeee;
+    --a-deep: #585858;
+    --a-accent: #ff4a5a;
+    --a-accent-bright: #ff808c;
+    --a-text: #fdfdfd;
+    --a-text-disabled: hsl(0deg 10% 45%);
+    --a-link: #ededed;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(16 16 16 / 68%);
+    --a-surface-2: rgb(38 38 38 / 60%);
+    --a-popup: #1d1d1d;
+    --a-solid: #1b1b1b;
+    --a-select: #878787;
+    --a-hover: #b2b2b2;
+    --a-border: rgb(253 253 253 / 16%);
+    --a-border-strong: #e8e8e8;
+    --a-bar: linear-gradient(180deg, #2e2e2e 0%, #101010 100%);
+    --a-bar-text: #fdfdfd;
+    --a-line: #e8e8e8;
+    --a-glow: rgb(232 232 232 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(16 16 16 / 42%) 0%, rgb(16 16 16 / 12%) 60%, transparent 100%);
+    --a-card: rgb(25 25 25 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #e8e8e8;
+}

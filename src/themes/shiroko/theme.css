@@ -1,0 +1,67 @@
+/* shiroko: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="shiroko"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Bank run? ...I mean, morning ride.  \2014";
+    --a-caption: "\25C6  Shiroko";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #f5f7fa;
+    --a-primary: #2f5f98;
+    --a-primary-bright: #6387b2;
+    --a-deep: #1a3454;
+    --a-accent: #5a5a6a;
+    --a-accent-bright: #8c8c97;
+    --a-text: #08111b;
+    --a-text-disabled: hsl(216deg 10% 58%);
+    --a-link: #1a3454;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(245 247 250 / 74%);
+    --a-surface-2: rgb(229 235 242 / 60%);
+    --a-popup: #fbfcfd;
+    --a-solid: #ebeff5;
+    --a-select: #2f5f98;
+    --a-hover: #597fad;
+    --a-border: rgb(26 52 84 / 18%);
+    --a-border-strong: #2f5f98;
+    --a-bar: linear-gradient(180deg, #fcfdfe 0%, #dde5ee 100%);
+    --a-bar-text: #1a3454;
+    --a-line: #2f5f98;
+    --a-glow: rgb(47 95 152 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(245 247 250 / 35%) 0%, rgb(245 247 250 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 251 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #1a3454;
+}
+
+:root[data-character="shiroko"].dark {
+    --a-base: #0a0d11;
+    --a-primary: #8ab8f0;
+    --a-primary-bright: #a7caf4;
+    --a-deep: #34465b;
+    --a-accent: #d8dce8;
+    --a-accent-bright: #e4e6ef;
+    --a-text: #f6f9fe;
+    --a-text-disabled: hsl(214deg 10% 45%);
+    --a-link: #a1c6f3;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(10 13 17 / 68%);
+    --a-surface-2: rgb(23 30 39 / 60%);
+    --a-popup: #12171e;
+    --a-solid: #10161c;
+    --a-select: #506b8c;
+    --a-hover: #6a8db8;
+    --a-border: rgb(246 249 254 / 16%);
+    --a-border-strong: #8ab8f0;
+    --a-bar: linear-gradient(180deg, #1c2530 0%, #0a0d11 100%);
+    --a-bar-text: #f6f9fe;
+    --a-line: #8ab8f0;
+    --a-glow: rgb(138 184 240 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(10 13 17 / 42%) 0%, rgb(10 13 17 / 12%) 60%, transparent 100%);
+    --a-card: rgb(15 20 26 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #8ab8f0;
+}

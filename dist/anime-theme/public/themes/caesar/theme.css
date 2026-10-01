@@ -1,0 +1,67 @@
+/* caesar: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="caesar"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Ride fast, stand tall, protect your crew.  \2014";
+    --a-caption: "\2655  Caesar";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #fbf8f3;
+    --a-primary: #a8760f;
+    --a-primary-bright: #be984b;
+    --a-deep: #5c4108;
+    --a-accent: #a8281f;
+    --a-accent-bright: #c26862;
+    --a-text: #1e1503;
+    --a-text-disabled: hsl(38deg 10% 58%);
+    --a-link: #5c4108;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 248 243 / 74%);
+    --a-surface-2: rgb(244 238 225 / 60%);
+    --a-popup: #fdfcfa;
+    --a-solid: #f7f2e8;
+    --a-select: #a8760f;
+    --a-hover: #b9913f;
+    --a-border: rgb(92 65 8 / 18%);
+    --a-border-strong: #a8760f;
+    --a-bar: linear-gradient(180deg, #fefdfb 0%, #f1e8d8 100%);
+    --a-bar-text: #5c4108;
+    --a-line: #a8760f;
+    --a-glow: rgb(168 118 15 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 248 243 / 35%) 0%, rgb(251 248 243 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 252 249 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #5c4108;
+}
+
+:root[data-character="caesar"].dark {
+    --a-base: #120e05;
+    --a-primary: #ffc84a;
+    --a-primary-bright: #ffd677;
+    --a-deep: #614c1c;
+    --a-accent: #ff6a5a;
+    --a-accent-bright: #ff978c;
+    --a-text: #fffbf1;
+    --a-text-disabled: hsl(42deg 10% 45%);
+    --a-link: #ffd36e;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 14 5 / 68%);
+    --a-surface-2: rgb(42 33 12 / 60%);
+    --a-popup: #201909;
+    --a-solid: #1e1708;
+    --a-select: #94742b;
+    --a-hover: #c49a39;
+    --a-border: rgb(255 251 241 / 16%);
+    --a-border-strong: #ffc84a;
+    --a-bar: linear-gradient(180deg, #33280f 0%, #120e05 100%);
+    --a-bar-text: #fffbf1;
+    --a-line: #ffc84a;
+    --a-glow: rgb(255 200 74 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 14 5 / 42%) 0%, rgb(18 14 5 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 21 8 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ffc84a;
+}

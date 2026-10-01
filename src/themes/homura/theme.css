@@ -1,0 +1,67 @@
+/* homura: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="homura"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  However many times it takes, I will turn back time.  \2014";
+    --a-caption: "\25C6  Homura";
+    --a-trim: linear-gradient(135deg, var(--a-line) 25%, transparent 25%) -5px 0 / 10px 6px repeat-x, linear-gradient(225deg, var(--a-line) 25%, transparent 25%) -5px 0 / 10px 6px repeat-x;
+    --a-base: #f4f1f8;
+    --a-primary: #5a3a80;
+    --a-primary-bright: #7b4fa0;
+    --a-deep: #3a2350;
+    --a-accent: #8a8a9e;
+    --a-accent-bright: #b48cd8;
+    --a-text: #241a30;
+    --a-text-disabled: hsl(270deg 8% 60%);
+    --a-link: #6a3f92;
+    --a-warn-text: #8a6a1e;
+    --a-error-text: #b0304a;
+    --a-ok-text: #4a5a8a;
+    --a-surface: rgb(244 241 248 / 74%);
+    --a-surface-2: rgb(226 216 238 / 62%);
+    --a-popup: #faf8fc;
+    --a-solid: #eee8f5;
+    --a-select: #5a3a80;
+    --a-hover: #7b4fa0;
+    --a-border: rgb(90 58 128 / 22%);
+    --a-border-strong: #3a2350;
+    --a-bar: linear-gradient(180deg, #ffffff 0%, #e7dff1 100%);
+    --a-bar-text: #3a2350;
+    --a-line: #7b4fa0;
+    --a-glow: rgb(123 79 160 / 25%);
+    --a-overlay: linear-gradient(90deg, rgb(244 241 248 / 10%) 0%, rgb(244 241 248 / 5%) 55%, transparent 100%);
+    --a-card: rgb(250 248 253 / 82%);
+    --a-input: rgb(255 255 255 / 80%);
+    --a-label: #5a3a80;
+}
+
+:root[data-character="homura"].dark {
+    --a-base: #0e0a14;
+    --a-primary: #9b6bc8;
+    --a-primary-bright: #b48cd8;
+    --a-deep: #3a2350;
+    --a-accent: #c9c9d6;
+    --a-accent-bright: #e6e6f0;
+    --a-text: #ece6f4;
+    --a-text-disabled: hsl(270deg 6% 46%);
+    --a-link: #c7a6e8;
+    --a-warn-text: #e0c070;
+    --a-error-text: #ff6b85;
+    --a-ok-text: #c9c9d6;
+    --a-surface: rgb(14 10 20 / 66%);
+    --a-surface-2: rgb(40 26 58 / 58%);
+    --a-popup: #1a1424;
+    --a-solid: #1c1527;
+    --a-select: #5a3a80;
+    --a-hover: #7b4fa0;
+    --a-border: rgb(180 140 216 / 22%);
+    --a-border-strong: #b48cd8;
+    --a-bar: linear-gradient(180deg, #2a1a3e 0%, #100b18 100%);
+    --a-bar-text: #ede4f7;
+    --a-line: #b48cd8;
+    --a-glow: rgb(155 107 200 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(10 6 16 / 40%) 0%, rgb(10 6 16 / 10%) 60%, transparent 100%);
+    --a-card: rgb(16 10 24 / 74%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #b48cd8;
+}

@@ -1,0 +1,67 @@
+/* tribbie: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="tribbie"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Three of us, one tiny miracle!  \2014";
+    --a-caption: "\2726  Tribbie";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fcf8f4;
+    --a-primary: #c07a1a;
+    --a-primary-bright: #d09b53;
+    --a-deep: #6a430e;
+    --a-accent: #b84a7a;
+    --a-accent-bright: #cd80a2;
+    --a-text: #231605;
+    --a-text-disabled: hsl(30deg 10% 58%);
+    --a-link: #6a430e;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(252 248 244 / 74%);
+    --a-surface-2: rgb(247 238 227 / 60%);
+    --a-popup: #fefcfb;
+    --a-solid: #f9f2e9;
+    --a-select: #c07a1a;
+    --a-hover: #cd9548;
+    --a-border: rgb(106 67 14 / 18%);
+    --a-border-strong: #c07a1a;
+    --a-bar: linear-gradient(180deg, #fefdfc 0%, #f5e9da 100%);
+    --a-bar-text: #6a430e;
+    --a-line: #c07a1a;
+    --a-glow: rgb(192 122 26 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(252 248 244 / 35%) 0%, rgb(252 248 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(254 252 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #6a430e;
+}
+
+:root[data-character="tribbie"].dark {
+    --a-base: #120e07;
+    --a-primary: #ffcc6a;
+    --a-primary-bright: #ffd98f;
+    --a-deep: #614e28;
+    --a-accent: #ff9ccf;
+    --a-accent-bright: #ffbadd;
+    --a-text: #fffbf3;
+    --a-text-disabled: hsl(38deg 10% 45%);
+    --a-link: #ffd688;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 14 7 / 68%);
+    --a-surface-2: rgb(42 33 17 / 60%);
+    --a-popup: #20190d;
+    --a-solid: #1e180c;
+    --a-select: #94763d;
+    --a-hover: #c49c51;
+    --a-border: rgb(255 251 243 / 16%);
+    --a-border-strong: #ffcc6a;
+    --a-bar: linear-gradient(180deg, #332915 0%, #120e07 100%);
+    --a-bar-text: #fffbf3;
+    --a-line: #ffcc6a;
+    --a-glow: rgb(255 204 106 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 14 7 / 42%) 0%, rgb(18 14 7 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 22 11 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ffcc6a;
+}

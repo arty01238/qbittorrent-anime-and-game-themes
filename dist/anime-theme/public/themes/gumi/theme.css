@@ -1,0 +1,67 @@
+/* gumi: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="gumi"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Fresh greens, fresh bytes!  \2014";
+    --a-caption: "\266A  GUMI";
+    --a-trim: repeating-linear-gradient(90deg, var(--a-line) 0 10px, transparent 10px 16px) 0 1px / 100% 2px no-repeat;
+    --a-base: #f5faf4;
+    --a-primary: #3f9a2a;
+    --a-primary-bright: #6fb35f;
+    --a-deep: #235517;
+    --a-accent: #d0701a;
+    --a-accent-bright: #de9b5f;
+    --a-text: #0b1c08;
+    --a-text-disabled: hsl(110deg 10% 58%);
+    --a-link: #235517;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(245 250 244 / 74%);
+    --a-surface-2: rgb(230 242 228 / 60%);
+    --a-popup: #fbfdfb;
+    --a-solid: #ecf5ea;
+    --a-select: #3f9a2a;
+    --a-hover: #65ae55;
+    --a-border: rgb(35 85 23 / 18%);
+    --a-border-strong: #3f9a2a;
+    --a-bar: linear-gradient(180deg, #fcfefc 0%, #dfeedc 100%);
+    --a-bar-text: #235517;
+    --a-line: #3f9a2a;
+    --a-glow: rgb(63 154 42 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(245 250 244 / 35%) 0%, rgb(245 250 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 252 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #235517;
+}
+
+:root[data-character="gumi"].dark {
+    --a-base: #0a1007;
+    --a-primary: #8ae06a;
+    --a-primary-bright: #a7e88f;
+    --a-deep: #345528;
+    --a-accent: #ffa04a;
+    --a-accent-bright: #ffbc80;
+    --a-text: #f6fdf3;
+    --a-text-disabled: hsl(100deg 10% 45%);
+    --a-link: #a1e688;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(10 16 7 / 68%);
+    --a-surface-2: rgb(23 37 17 / 60%);
+    --a-popup: #121c0d;
+    --a-solid: #101a0c;
+    --a-select: #50823d;
+    --a-hover: #6aac51;
+    --a-border: rgb(246 253 243 / 16%);
+    --a-border-strong: #8ae06a;
+    --a-bar: linear-gradient(180deg, #1c2d15 0%, #0a1007 100%);
+    --a-bar-text: #f6fdf3;
+    --a-line: #8ae06a;
+    --a-glow: rgb(138 224 106 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(10 16 7 / 42%) 0%, rgb(10 16 7 / 12%) 60%, transparent 100%);
+    --a-card: rgb(15 24 11 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #8ae06a;
+}

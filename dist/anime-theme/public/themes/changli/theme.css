@@ -1,0 +1,67 @@
+/* changli: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="changli"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Every move, a step ahead.  \2014";
+    --a-caption: "\2739  Changli";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fbf5f4;
+    --a-primary: #b8331f;
+    --a-primary-bright: #ca6657;
+    --a-deep: #651c11;
+    --a-accent: #a8801f;
+    --a-accent-bright: #c2a662;
+    --a-text: #210906;
+    --a-text-disabled: hsl(9deg 10% 58%);
+    --a-link: #651c11;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 245 244 / 74%);
+    --a-surface-2: rgb(246 229 227 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f8ebe9;
+    --a-select: #b8331f;
+    --a-hover: #c65c4c;
+    --a-border: rgb(101 28 17 / 18%);
+    --a-border-strong: #b8331f;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #f3deda 100%);
+    --a-bar-text: #651c11;
+    --a-line: #b8331f;
+    --a-glow: rgb(184 51 31 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 245 244 / 35%) 0%, rgb(251 245 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #651c11;
+}
+
+:root[data-character="changli"].dark {
+    --a-base: #120705;
+    --a-primary: #ff6a4a;
+    --a-primary-bright: #ff8f77;
+    --a-deep: #61281c;
+    --a-accent: #ffd27a;
+    --a-accent-bright: #ffe0a2;
+    --a-text: #fff3f1;
+    --a-text-disabled: hsl(9deg 10% 45%);
+    --a-link: #ff886e;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 7 5 / 68%);
+    --a-surface-2: rgb(42 17 12 / 60%);
+    --a-popup: #200d09;
+    --a-solid: #1e0c08;
+    --a-select: #943d2b;
+    --a-hover: #c45139;
+    --a-border: rgb(255 243 241 / 16%);
+    --a-border-strong: #ff6a4a;
+    --a-bar: linear-gradient(180deg, #33150f 0%, #120705 100%);
+    --a-bar-text: #fff3f1;
+    --a-line: #ff6a4a;
+    --a-glow: rgb(255 106 74 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 7 5 / 42%) 0%, rgb(18 7 5 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 11 8 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff6a4a;
+}

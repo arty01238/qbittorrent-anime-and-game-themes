@@ -1,0 +1,67 @@
+/* remilia: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="remilia"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  The night is young, and so is your fate.  \2014";
+    --a-caption: "\2766  Scarlet";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #faf4f5;
+    --a-primary: #a01a3a;
+    --a-primary-bright: #b8536b;
+    --a-deep: #580e20;
+    --a-accent: #5a3aa0;
+    --a-accent-bright: #8c75bc;
+    --a-text: #1d050a;
+    --a-text-disabled: hsl(350deg 10% 58%);
+    --a-link: #580e20;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(250 244 245 / 74%);
+    --a-surface-2: rgb(243 227 230 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f6e9ec;
+    --a-select: #a01a3a;
+    --a-hover: #b34861;
+    --a-border: rgb(88 14 32 / 18%);
+    --a-border-strong: #a01a3a;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #efdadf 100%);
+    --a-bar-text: #580e20;
+    --a-line: #a01a3a;
+    --a-glow: rgb(160 26 58 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(250 244 245 / 35%) 0%, rgb(250 244 245 / 10%) 55%, transparent 100%);
+    --a-card: rgb(252 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #580e20;
+}
+
+:root[data-character="remilia"].dark {
+    --a-base: #120507;
+    --a-primary: #ff4a6a;
+    --a-primary-bright: #ff778f;
+    --a-deep: #611c28;
+    --a-accent: #c9a8ff;
+    --a-accent-bright: #d9c2ff;
+    --a-text: #fff1f3;
+    --a-text-disabled: hsl(351deg 10% 45%);
+    --a-link: #ff6e88;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 5 7 / 68%);
+    --a-surface-2: rgb(42 12 17 / 60%);
+    --a-popup: #20090d;
+    --a-solid: #1e080c;
+    --a-select: #942b3d;
+    --a-hover: #c43951;
+    --a-border: rgb(255 241 243 / 16%);
+    --a-border-strong: #ff4a6a;
+    --a-bar: linear-gradient(180deg, #330f15 0%, #120507 100%);
+    --a-bar-text: #fff1f3;
+    --a-line: #ff4a6a;
+    --a-glow: rgb(255 74 106 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 5 7 / 42%) 0%, rgb(18 5 7 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 8 11 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff4a6a;
+}

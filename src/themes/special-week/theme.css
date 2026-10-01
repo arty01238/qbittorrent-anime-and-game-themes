@@ -1,0 +1,67 @@
+/* special-week: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="special-week"] {
+    --a-font: "AnimePlayfair", Georgia, serif;
+    --a-tagline: "\2014  Number one horse girl, coming through!  \2014";
+    --a-caption: "\2605  Spe-chan";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #fbf5f9;
+    --a-primary: #a83f7f;
+    --a-primary-bright: #be6f9f;
+    --a-deep: #5c2346;
+    --a-accent: #2a44a8;
+    --a-accent-bright: #6a7cc2;
+    --a-text: #1e0b17;
+    --a-text-disabled: hsl(320deg 10% 58%);
+    --a-link: #5c2346;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 245 249 / 74%);
+    --a-surface-2: rgb(244 230 239 / 60%);
+    --a-popup: #fdfbfd;
+    --a-solid: #f7ecf3;
+    --a-select: #a83f7f;
+    --a-hover: #b96599;
+    --a-border: rgb(92 35 70 / 18%);
+    --a-border-strong: #a83f7f;
+    --a-bar: linear-gradient(180deg, #fefcfd 0%, #f1dfea 100%);
+    --a-bar-text: #5c2346;
+    --a-line: #a83f7f;
+    --a-glow: rgb(168 63 127 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 245 249 / 35%) 0%, rgb(251 245 249 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #5c2346;
+}
+
+:root[data-character="special-week"].dark {
+    --a-base: #120a0f;
+    --a-primary: #ff8ad0;
+    --a-primary-bright: #ffa7dc;
+    --a-deep: #61344f;
+    --a-accent: #8aa8ff;
+    --a-accent-bright: #adc2ff;
+    --a-text: #fff6fb;
+    --a-text-disabled: hsl(322deg 10% 45%);
+    --a-link: #ffa1d9;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 10 15 / 68%);
+    --a-surface-2: rgb(42 23 34 / 60%);
+    --a-popup: #20121b;
+    --a-solid: #1e1019;
+    --a-select: #945079;
+    --a-hover: #c46aa0;
+    --a-border: rgb(255 246 251 / 16%);
+    --a-border-strong: #ff8ad0;
+    --a-bar: linear-gradient(180deg, #331c2a 0%, #120a0f 100%);
+    --a-bar-text: #fff6fb;
+    --a-line: #ff8ad0;
+    --a-glow: rgb(255 138 208 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 10 15 / 42%) 0%, rgb(18 10 15 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 15 23 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff8ad0;
+}

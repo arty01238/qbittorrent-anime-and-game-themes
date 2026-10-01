@@ -1,0 +1,67 @@
+/* deku: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="deku"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Smash through every queue!  \2014";
+    --a-caption: "\26A1  Deku";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #f4f8f6;
+    --a-primary: #25784a;
+    --a-primary-bright: #5c9a77;
+    --a-deep: #144229;
+    --a-accent: #b8301f;
+    --a-accent-bright: #cd6e62;
+    --a-text: #07160d;
+    --a-text-disabled: hsl(150deg 10% 58%);
+    --a-link: #144229;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(244 248 246 / 74%);
+    --a-surface-2: rgb(227 238 232 / 60%);
+    --a-popup: #fbfcfb;
+    --a-solid: #eaf2ed;
+    --a-select: #25784a;
+    --a-hover: #51936e;
+    --a-border: rgb(20 66 41 / 18%);
+    --a-border-strong: #25784a;
+    --a-bar: linear-gradient(180deg, #fcfdfc 0%, #dbe9e1 100%);
+    --a-bar-text: #144229;
+    --a-line: #25784a;
+    --a-glow: rgb(37 120 74 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(244 248 246 / 35%) 0%, rgb(244 248 246 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 252 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #144229;
+}
+
+:root[data-character="deku"].dark {
+    --a-base: #060f0a;
+    --a-primary: #5ad08a;
+    --a-primary-bright: #83dca7;
+    --a-deep: #224f34;
+    --a-accent: #ff6a5a;
+    --a-accent-bright: #ff978c;
+    --a-text: #f2fbf6;
+    --a-text-disabled: hsl(147deg 10% 45%);
+    --a-link: #7bd9a1;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(6 15 10 / 68%);
+    --a-surface-2: rgb(14 34 23 / 60%);
+    --a-popup: #0b1b12;
+    --a-solid: #0a1910;
+    --a-select: #347950;
+    --a-hover: #45a06a;
+    --a-border: rgb(242 251 246 / 16%);
+    --a-border-strong: #5ad08a;
+    --a-bar: linear-gradient(180deg, #122a1c 0%, #060f0a 100%);
+    --a-bar-text: #f2fbf6;
+    --a-line: #5ad08a;
+    --a-glow: rgb(90 208 138 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(6 15 10 / 42%) 0%, rgb(6 15 10 / 12%) 60%, transparent 100%);
+    --a-card: rgb(9 23 15 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #5ad08a;
+}

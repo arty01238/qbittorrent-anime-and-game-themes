@@ -1,0 +1,67 @@
+/* shorekeeper: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="shorekeeper"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  The shore remembers every star.  \2014";
+    --a-caption: "\2727  Shorekeeper";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f5f7fb;
+    --a-primary: #3456a8;
+    --a-primary-bright: #6780be;
+    --a-deep: #1d2f5c;
+    --a-accent: #6a4ab8;
+    --a-accent-bright: #9780cd;
+    --a-text: #090f1e;
+    --a-text-disabled: hsl(220deg 10% 58%);
+    --a-link: #1d2f5c;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(245 247 251 / 74%);
+    --a-surface-2: rgb(230 234 244 / 60%);
+    --a-popup: #fbfcfd;
+    --a-solid: #ebeff7;
+    --a-select: #3456a8;
+    --a-hover: #5d78b9;
+    --a-border: rgb(29 47 92 / 18%);
+    --a-border-strong: #3456a8;
+    --a-bar: linear-gradient(180deg, #fcfdfe 0%, #dee4f1 100%);
+    --a-bar-text: #1d2f5c;
+    --a-line: #3456a8;
+    --a-glow: rgb(52 86 168 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(245 247 251 / 35%) 0%, rgb(245 247 251 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 251 253 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #1d2f5c;
+}
+
+:root[data-character="shorekeeper"].dark {
+    --a-base: #0a0c12;
+    --a-primary: #8ab0ff;
+    --a-primary-bright: #a7c4ff;
+    --a-deep: #344361;
+    --a-accent: #c8a8ff;
+    --a-accent-bright: #d8c2ff;
+    --a-text: #f6f9ff;
+    --a-text-disabled: hsl(225deg 10% 45%);
+    --a-link: #a1c0ff;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(10 12 18 / 68%);
+    --a-surface-2: rgb(23 28 42 / 60%);
+    --a-popup: #121620;
+    --a-solid: #10141e;
+    --a-select: #506694;
+    --a-hover: #6a87c4;
+    --a-border: rgb(246 249 255 / 16%);
+    --a-border-strong: #8ab0ff;
+    --a-bar: linear-gradient(180deg, #1c2333 0%, #0a0c12 100%);
+    --a-bar-text: #f6f9ff;
+    --a-line: #8ab0ff;
+    --a-glow: rgb(138 176 255 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(10 12 18 / 42%) 0%, rgb(10 12 18 / 12%) 60%, transparent 100%);
+    --a-card: rgb(15 19 27 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #8ab0ff;
+}

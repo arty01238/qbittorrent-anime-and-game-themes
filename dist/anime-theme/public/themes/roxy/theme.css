@@ -1,0 +1,67 @@
+/* roxy: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="roxy"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Study hard, cast true. Your teacher believes in you.  \2014";
+    --a-caption: "\2726  Roxy";
+    --a-trim: radial-gradient(circle at 6px 0, var(--a-line) 2.5px, transparent 3px) 0 0 / 12px 6px repeat-x;
+    --a-base: #f6f3ec;
+    --a-primary: #1f3a7a;
+    --a-primary-bright: #4c7bd9;
+    --a-deep: #12244f;
+    --a-accent: #6b4a2e;
+    --a-accent-bright: #c89a5e;
+    --a-text: #1c2235;
+    --a-text-disabled: hsl(225deg 10% 60%);
+    --a-link: #2a52a8;
+    --a-warn-text: #8a5a1e;
+    --a-error-text: #b8303a;
+    --a-ok-text: #2f6a8a;
+    --a-surface: rgb(246 243 236 / 72%);
+    --a-surface-2: rgb(228 232 244 / 60%);
+    --a-popup: #fbf9f4;
+    --a-solid: #efece4;
+    --a-select: #1f3a7a;
+    --a-hover: #4c7bd9;
+    --a-border: rgb(31 58 122 / 20%);
+    --a-border-strong: #1f3a7a;
+    --a-bar: linear-gradient(180deg, #fffdf8 0%, #e6e9f3 100%);
+    --a-bar-text: #1f3a7a;
+    --a-line: #1f3a7a;
+    --a-glow: rgb(76 123 217 / 25%);
+    --a-overlay: linear-gradient(90deg, rgb(246 243 236 / 35%) 0%, rgb(246 243 236 / 10%) 55%, transparent 100%);
+    --a-card: rgb(250 248 243 / 82%);
+    --a-input: rgb(255 255 255 / 80%);
+    --a-label: #1f3a7a;
+}
+
+:root[data-character="roxy"].dark {
+    --a-base: #080b16;
+    --a-primary: #4c7bd9;
+    --a-primary-bright: #8fb0ff;
+    --a-deep: #12244f;
+    --a-accent: #c89a5e;
+    --a-accent-bright: #f0d29a;
+    --a-text: #e6eaf6;
+    --a-text-disabled: hsl(225deg 8% 46%);
+    --a-link: #9ab8ff;
+    --a-warn-text: #f0c27a;
+    --a-error-text: #ff6b7a;
+    --a-ok-text: #8fd0ff;
+    --a-surface: rgb(8 11 22 / 66%);
+    --a-surface-2: rgb(20 30 60 / 58%);
+    --a-popup: #10152a;
+    --a-solid: #121830;
+    --a-select: #2a4a9a;
+    --a-hover: #4c7bd9;
+    --a-border: rgb(143 176 255 / 20%);
+    --a-border-strong: #8fb0ff;
+    --a-bar: linear-gradient(180deg, #1b2a55 0%, #0a0f20 100%);
+    --a-bar-text: #e8eeff;
+    --a-line: #8fb0ff;
+    --a-glow: rgb(76 123 217 / 40%);
+    --a-overlay: linear-gradient(90deg, rgb(6 8 18 / 40%) 0%, rgb(6 8 18 / 10%) 60%, transparent 100%);
+    --a-card: rgb(10 14 30 / 74%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #8fb0ff;
+}

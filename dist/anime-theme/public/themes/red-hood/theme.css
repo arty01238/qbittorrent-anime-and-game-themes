@@ -1,0 +1,67 @@
+/* red-hood: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="red-hood"] {
+    --a-font: "AnimeCinzel", Georgia, serif;
+    --a-tagline: "\2014  Burn it all down, in style.  \2014";
+    --a-caption: "\2739  Red Hood";
+    --a-trim: repeating-linear-gradient(45deg, var(--a-line) 0 4px, transparent 4px 8px) 0 0 / 100% 5px no-repeat;
+    --a-base: #fbf4f4;
+    --a-primary: #a81f24;
+    --a-primary-bright: #be575b;
+    --a-deep: #5c1114;
+    --a-accent: #2a2a2a;
+    --a-accent-bright: #6a6a6a;
+    --a-text: #1e0606;
+    --a-text-disabled: hsl(0deg 10% 58%);
+    --a-link: #5c1114;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(251 244 244 / 74%);
+    --a-surface-2: rgb(244 227 227 / 60%);
+    --a-popup: #fdfbfb;
+    --a-solid: #f7e9ea;
+    --a-select: #a81f24;
+    --a-hover: #b94c50;
+    --a-border: rgb(92 17 20 / 18%);
+    --a-border-strong: #a81f24;
+    --a-bar: linear-gradient(180deg, #fefcfc 0%, #f1dadb 100%);
+    --a-bar-text: #5c1114;
+    --a-line: #a81f24;
+    --a-glow: rgb(168 31 36 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(251 244 244 / 35%) 0%, rgb(251 244 244 / 10%) 55%, transparent 100%);
+    --a-card: rgb(253 250 250 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #5c1114;
+}
+
+:root[data-character="red-hood"].dark {
+    --a-base: #120404;
+    --a-primary: #ff3a3a;
+    --a-primary-bright: #ff6b6b;
+    --a-deep: #611616;
+    --a-accent: #e8e8e8;
+    --a-accent-bright: #efefef;
+    --a-text: #ffefef;
+    --a-text-disabled: hsl(0deg 10% 45%);
+    --a-link: #ff6161;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 4 4 / 68%);
+    --a-surface-2: rgb(42 9 9 / 60%);
+    --a-popup: #200707;
+    --a-solid: #1e0707;
+    --a-select: #942222;
+    --a-hover: #c42c2c;
+    --a-border: rgb(255 239 239 / 16%);
+    --a-border-strong: #ff3a3a;
+    --a-bar: linear-gradient(180deg, #330c0c 0%, #120404 100%);
+    --a-bar-text: #ffefef;
+    --a-line: #ff3a3a;
+    --a-glow: rgb(255 58 58 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 4 4 / 42%) 0%, rgb(18 4 4 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 6 6 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff3a3a;
+}

@@ -1,0 +1,67 @@
+/* luka: per-character variables. Light = default, dark = qBittorrent's .dark class.
+   No url() here: images come from this folder by convention (set by theme-loader.js). */
+:root[data-character="luka"] {
+    --a-font: "AnimeCormorant", Georgia, serif;
+    --a-tagline: "\2014  A low note, a long seed, a calm night.  \2014";
+    --a-caption: "\266B  Luka";
+    --a-trim: linear-gradient(var(--a-line), var(--a-line)) 0 1px / 100% 1px no-repeat, linear-gradient(var(--a-line), var(--a-line)) 0 4px / 100% 1px no-repeat;
+    --a-base: #fcf6f8;
+    --a-primary: #c84a7a;
+    --a-primary-bright: #d6779b;
+    --a-deep: #6e2943;
+    --a-accent: #a8801a;
+    --a-accent-bright: #c2a65f;
+    --a-text: #240d16;
+    --a-text-disabled: hsl(340deg 10% 58%);
+    --a-link: #6e2943;
+    --a-warn-text: #8a5a00;
+    --a-error-text: #b02020;
+    --a-ok-text: #2f6a2a;
+    --a-surface: rgb(252 246 248 / 74%);
+    --a-surface-2: rgb(248 232 238 / 60%);
+    --a-popup: #fefbfc;
+    --a-solid: #f9edf2;
+    --a-select: #c84a7a;
+    --a-hover: #d36e95;
+    --a-border: rgb(110 41 67 / 18%);
+    --a-border-strong: #c84a7a;
+    --a-bar: linear-gradient(180deg, #fefcfd 0%, #f6e1e9 100%);
+    --a-bar-text: #6e2943;
+    --a-line: #c84a7a;
+    --a-glow: rgb(200 74 122 / 28%);
+    --a-overlay: linear-gradient(90deg, rgb(252 246 248 / 35%) 0%, rgb(252 246 248 / 10%) 55%, transparent 100%);
+    --a-card: rgb(254 250 252 / 84%);
+    --a-input: rgb(255 255 255 / 85%);
+    --a-label: #6e2943;
+}
+
+:root[data-character="luka"].dark {
+    --a-base: #120b0d;
+    --a-primary: #ff9ac0;
+    --a-primary-bright: #ffb3d0;
+    --a-deep: #613b49;
+    --a-accent: #ffd27a;
+    --a-accent-bright: #ffe0a2;
+    --a-text: #fff7fa;
+    --a-text-disabled: hsl(343deg 10% 45%);
+    --a-link: #ffaecd;
+    --a-warn-text: #ffc860;
+    --a-error-text: #ff6a5a;
+    --a-ok-text: #9adf8a;
+    --a-surface: rgb(18 11 13 / 68%);
+    --a-surface-2: rgb(42 25 31 / 60%);
+    --a-popup: #201418;
+    --a-solid: #1e1216;
+    --a-select: #945a6f;
+    --a-hover: #c47693;
+    --a-border: rgb(255 247 250 / 16%);
+    --a-border-strong: #ff9ac0;
+    --a-bar: linear-gradient(180deg, #331f26 0%, #120b0d 100%);
+    --a-bar-text: #fff7fa;
+    --a-line: #ff9ac0;
+    --a-glow: rgb(255 154 192 / 35%);
+    --a-overlay: linear-gradient(90deg, rgb(18 11 13 / 42%) 0%, rgb(18 11 13 / 12%) 60%, transparent 100%);
+    --a-card: rgb(27 17 20 / 76%);
+    --a-input: rgb(255 255 255 / 6%);
+    --a-label: #ff9ac0;
+}
