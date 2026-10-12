@@ -73,6 +73,13 @@ The picker has a search box (it matches name, id, or series; Up/Down and Enter c
 - English only. Translation files are not bundled in this Alternative WebUI.
 - Icon recoloring uses CSS `content` on `<img>` and CSS variables for background icons. That fully works in Chromium browsers. In browsers that do not support `content` on images, `<img>` icons fall back to the default (Kurumi) colours.
 
+## Troubleshooting
+
+Pack version 7.
+
+- **Dialogs sit under the page, or the filter bar and torrent list stay empty.** Cloudflare Rocket Loader (and similar proxies that reorder scripts) stops qBittorrent's window manager, MochaUI, from laying out the desktop. The same thing happens with the stock WebUI. Every `<script>` in this pack has `data-cfasync="false"`, so Rocket Loader leaves it alone. If a proxy still rewrites scripts, turn Rocket Loader off for the WebUI host (Cloudflare dashboard → Speed → Optimization, or a Configuration Rule).
+- **The filter sidebar stays hidden.** qBittorrent stores the sidebar width in the browser as `filters_width`. A value saved while the window was minimised can be 0, and a bad `properties_height_rel` can hide the torrent list. On load, the theme loader drops those values when they are out of range and the defaults come back. **View → Filters Sidebar** also toggles the bar. If an older cached copy is still running, clear site data for the WebUI origin (or hard-reload) so the browser fetches pack version 7, then reload. Clearing site data also clears the saved character (`qbtAnimeCharacter`).
+
 ## Layout
 
 ```

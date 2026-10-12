@@ -14,7 +14,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 STOCK = Path(os.environ.get("QBT_WEBUI_SRC", ROOT.parent / "qBittorrent" / "src" / "webui" / "www"))
-OUT = ROOT / "dist" / "anime-theme"
+OUT = Path(os.environ.get("QBT_THEME_OUT", ROOT / "dist" / "anime-theme"))
 FONT_DIR = HERE / "fonts"
 FONT_FILES = ("Cinzel.ttf", "PlayfairDisplay.ttf", "CormorantGaramond.ttf")
 # stock icon colour -> palette role
@@ -149,9 +149,21 @@ def main():
     assert old in t
     t = t.replace(old, f'<img src="themes/{default["id"]}/avatar.webp" alt="{default["name"]}" data-anime-avatar> <!-- anime-theme -->')
     idx.write_text(t)
+    # Opt every <script> out of Cloudflare Rocket Loader (and similar proxy
+    # "script optimisers"). Rocket Loader rewrites script types and runs them
+    # late and out of order, so MochaUI never lays out the desktop: the filter
+    # sidebar and torrent list stay empty and windows/menus are not stacked.
+    cf = 0
+    for html in OUT.rglob("*.html"):
+        t = html.read_text()
+        t2 = re.sub(r"<script\b(?![^>]*\bdata-cfasync=)", '<script data-cfasync="false"', t)
+        if t2 != t:
+            html.write_text(t2); cf += 1
     shutil.copy(HERE / "README.md", OUT / "README.md")
-    print(f"characters={ids} icons={len(names)} private_html_patched={n}")
+    print(f"characters={ids} icons={len(names)} private_html_patched={n} cfasync_html={cf}")
 
 
 if __name__ == "__main__":
     main()
+
+
