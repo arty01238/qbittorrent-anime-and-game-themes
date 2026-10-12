@@ -74,6 +74,20 @@
         root.classList.toggle("dark", sch ? sch === "dark" : prefersDark());
         root.classList.add("anime-login");
     } else if (window.top === window) {
+        // Saved splitter sizes from qBittorrent's own LocalPreferences. A width of 0
+        // (e.g. saved while the window was minimised) hides the filter sidebar for
+        // good, and a near-1 properties ratio hides the torrent list. Drop
+        // out-of-range values before client.js reads them so the defaults apply.
+        var sane = function (key, lo, hi) {
+            try {
+                var raw = localStorage.getItem(key);
+                if (raw === null) return;
+                var v = Number(raw);
+                if (!isFinite(v) || v < lo || v > hi) localStorage.removeItem(key);
+            } catch (e) { /* storage blocked */ }
+        };
+        sane("filters_width", 80, 1000);
+        sane("properties_height_rel", 0.08, 0.85);
         var remember = function () { try { localStorage.setItem(SCHEME_KEY, root.classList.contains("dark") ? "dark" : "light"); } catch (e) { /* ignore */ } };
         new MutationObserver(remember).observe(root, { attributes: true, attributeFilter: ["class"] });
         document.addEventListener("DOMContentLoaded", remember);

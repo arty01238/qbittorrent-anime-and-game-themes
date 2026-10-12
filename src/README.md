@@ -43,6 +43,19 @@ private/
    If you edit the server copy directly and skip the build, set `"icons": false`. The character then uses the default icons.
 4. Raise `"version"` in manifest.js so browsers fetch the new theme.css.
 
+## Troubleshooting
+
+* **Behind Cloudflare (or another proxy that "optimises" scripts):** every `<script>` in the pack carries
+  `data-cfasync="false"`, so Cloudflare Rocket Loader leaves it alone. Rocket Loader delays and reorders
+  scripts, which stops qBittorrent's window manager (MochaUI) from laying out the page. You then get an
+  empty filter sidebar and torrent list, and windows and menus show up behind the page. This also happens
+  with the stock WebUI. If you edit the HTML by hand, keep that attribute, or turn Rocket Loader off for
+  the qBittorrent hostname (Cloudflare dashboard → Speed → Optimization, or a Configuration Rule).
+* **Filter sidebar missing:** qBittorrent saves the sidebar width in the browser (`filters_width`). A
+  value saved while the window was minimised can be 0. The theme loader now discards out-of-range
+  `filters_width` and `properties_height_rel` values on load, so the defaults come back. View → Filters
+  Sidebar also toggles it.
+
 ## Image sources (wallhaven.cc, all tagged with the character, purity SFW)
 Credit in brackets is the artist or official account named in the wallhaven source link (pixiv works are checked against pixiv's own AI flag; all listed pixiv works are declared non-AI or predate AI image tools).
 

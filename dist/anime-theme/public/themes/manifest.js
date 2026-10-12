@@ -4,7 +4,7 @@
    to generate themes/<id>/icons/; set "icons": false to reuse the default icons.
    The object assigned below must stay valid JSON (no comments, no trailing commas). */
 window.ANIME_THEMES = {
-  "version": "6",
+  "version": "7",
   "default": "kurumi",
   "characters": [
     {
